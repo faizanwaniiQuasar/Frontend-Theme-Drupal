@@ -1,3 +1,6 @@
+// home slider logic
+
+
 document.addEventListener("DOMContentLoaded", () => {
   const section = document.querySelector(".testimonial");
   if (!section) return;

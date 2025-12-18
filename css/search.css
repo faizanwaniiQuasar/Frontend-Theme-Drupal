@@ -9,26 +9,20 @@ body {
   background: #fbf5f2;
 }
 
-/* =========================
-   BASE
-========================= */
+
 .ranking-header {
   background: #0b2f24;
   color: #ffffff;
 }
 
-/* =========================
-   CONTAINER
-========================= */
+
 .ranking-header__container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 64px 24px;
 }
 
-/* =========================
-   DESKTOP LAYOUT
-========================= */
+
 .ranking-header__desktop {
   display: block;
 }
@@ -40,14 +34,14 @@ body {
   align-items: center;
 }
 
-/* BADGE */
+
 .ranking-header__badge img {
   width: 140px;
   height: auto;
   display: block;
 }
 
-/* CONTENT */
+
 /* .ranking-header__content {
   max-width: 720px;
 } */
@@ -66,7 +60,7 @@ line-height: 1.2;
   display: inline-block;
 }
 
-/* DESCRIPTION */
+
 .ranking-header__description p {
       font-family: 'Source Sans Pro', 'sans-serif';
     font-weight: 400;
@@ -84,9 +78,7 @@ line-height: 1.2;
   text-decoration: none;
 }
 
-/* =========================
-   MOBILE LAYOUT
-========================= */
+
 .ranking-header__mobile {
   display: none;
 }
@@ -102,9 +94,7 @@ line-height: 1.2;
   margin: 20px 0;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+
 @media (max-width: 768px) {
   .ranking-header__desktop {
     display: none;
@@ -139,9 +129,7 @@ line-height: 1.2;
 
 /* tabs */
 
-/* =========================
-   BASE
-========================= */
+
 
 
 nav {
@@ -156,9 +144,7 @@ nav {
   font-family: "Source Sans Pro", sans-serif;
 }
 
-/* =========================
-   WIDTH & PADDING
-========================= */
+
 @media (min-width: 1080px) {
   .search-topics-explorer {
     max-width: 1080px;
@@ -178,9 +164,7 @@ nav {
   }
 }
 
-/* =========================
-   TOP RAIL
-========================= */
+
 .search-topics-explorer__suggested-topics-wrap {
   display: flex;
   align-items: baseline;
@@ -189,7 +173,7 @@ nav {
   border-bottom: 1px solid #c3bfbe;
 }
 
-/* CURRENT */
+
 .search-topics-explorer__current-topic {
   font-weight: 600;
   color: #004436;
@@ -212,7 +196,7 @@ nav {
   background: #0b2f24;
 }
 
-/* INLINE TOPICS */
+
 .search-topics-explorer__suggested-topics {
   display: flex;
   gap: 68px;
@@ -238,7 +222,7 @@ nav {
   text-decoration: underline;
 }
 
-/* MORE BUTTON */
+
 .search-topics-explorer__more {
         color: #4a4a4a;
     display: block;
@@ -263,9 +247,7 @@ nav {
   transform: rotate(180deg);
 }
 
-/* =========================
-   DROPDOWN
-========================= */
+
 .search-topics-explorer-wrap {
   position: absolute;
   top: 100%;
@@ -282,7 +264,7 @@ nav {
   z-index: 7;
 }
 
-/* COLUMNS */
+
 .search-topics-explorer__columns {
   display: flex;
   flex-wrap: wrap;
@@ -316,18 +298,16 @@ nav {
   text-decoration: underline;
 }
 
-/* =========================
-   RESPONSIVE BEHAVIOR
-========================= */
 
-/* Tablet */
+
+
 @media (max-width: 1024px) {
   .hide-tablet {
     display: none;
   }
 }
 
-/* Mobile */
+
 @media (max-width: 768px) {
   .search-topics-explorer__suggested-topics {
     overflow-x: auto;

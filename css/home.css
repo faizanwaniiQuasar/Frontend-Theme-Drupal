@@ -1,6 +1,4 @@
-/* =========================
-   DESIGN TOKENS
-========================= */
+
 :root {
   --green-dark: #102f25;
   --green-btn: #247c3b;
@@ -14,9 +12,7 @@
   --max-content-width: 520px;
 }
 
-/* =========================
-   RESET
-========================= */
+
 * {
   margin: 0;
   padding: 0;
@@ -28,19 +24,15 @@ body {
   color: var(--text-light);
 }
 
-/* =========================
-   HERO GRID (DESKTOP DEFAULT)
-========================= */
+
 .hero {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 50 / 50 */
+  grid-template-columns: 1fr 1fr; 
   width: 100%;
-  min-height: 30vh; /* desktop immersive */
+  min-height: 30vh;
 }
 
-/* =========================
-   LEFT IMAGE
-========================= */
+
 .hero__image {
   position: relative;
   width: 100%;
@@ -63,9 +55,7 @@ body {
   pointer-events: none;
 }
 
-/* =========================
-   RIGHT CONTENT
-========================= */
+
 .hero__content {
   background: var(--green-dark);
   display: flex;
@@ -79,9 +69,7 @@ body {
   max-width: var(--max-content-width);
 }
 
-/* =========================
-   TYPOGRAPHY
-========================= */
+
 .hero__kicker {
   font-size: 1.2rem;
   line-height: 1;
@@ -97,9 +85,7 @@ body {
   font-weight: 700;
 }
 
-/* =========================
-   WAVE
-========================= */
+
 .hero__wave {
   margin: 20px auto 28px;
   max-width: 160px;
@@ -117,9 +103,7 @@ body {
     stroke: #237c3a;
 }
 
-/* =========================
-   DESCRIPTION
-========================= */
+
 .hero__description {
   font-size: 1.125rem;
   line-height: 1.4;
@@ -129,9 +113,7 @@ body {
   text-shadow: 0 1px 8px #102f25;
 }
 
-/* =========================
-   CTA
-========================= */
+
 .hero__cta {
   display: flex;
   flex-direction: column;
@@ -156,9 +138,7 @@ body {
         width: 90%;
 }
 
-/* =========================
-   BUTTON
-========================= */
+
 .btn {
   background: var(--green-btn);
   color: #fff;
@@ -180,9 +160,7 @@ body {
   background: var(--green-btn-hover);
 }
 
-/* =========================
-   TABLET (768px – 1024px)
-========================= */
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .hero {
    
@@ -212,9 +190,7 @@ body {
   }
 }
 
-/* =========================
-   MOBILE (< 768px)
-========================= */
+
 @media (max-width: 768px) {
   .hero {
     grid-template-columns: 1fr;
@@ -283,7 +259,7 @@ body {
 
 
 
-/* CONTAINER */
+
 .direct-admissions__container {
   max-width: 1000px;
   margin: 0 auto;
@@ -292,7 +268,7 @@ body {
 
 
 
-/* GRID */
+
 .direct-admissions__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -300,7 +276,7 @@ body {
   align-items: center;
 }
 
-/* CONTENT */
+
 .direct-admissions__content {
   display: flex;
   flex-direction: column;
@@ -337,26 +313,26 @@ body {
   
 }
 
-/* CTA */
+
 .direct-admissions__cta {
   display: flex;
   gap: 16px;
   margin-top: 24px;
 }
 
-/* IMAGE */
+
 .direct-admissions__image img,
 .direct-admissions__image--mobile img {
   width: 100%;
   max-width: 420px;
 }
 
-/* MOBILE IMAGE VISIBILITY */
+
 .direct-admissions__image--mobile {
   display: none;
 }
 
-/* BUTTON VARIANTS */
+
 
 
 
@@ -394,12 +370,10 @@ body {
      background-color: #004436;
     color: #fff;
 }
-/* =========================
-   TABLET 
-========================= */
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .direct-admissions__grid {
-    grid-template-columns: 1fr 1fr; /* KEEP 2 columns */
+    grid-template-columns: 1fr 1fr; 
     gap: 48px;
   }
 
@@ -415,7 +389,7 @@ body {
   }
 }
 
-/* & MOBILE */
+
 @media (max-width: 767px) {
   .direct-admissions__grid {
     grid-template-columns: 1fr;
@@ -438,28 +412,24 @@ body {
 
 
 /* find */
-/* =========================
-   WHY NICHE SECTION
-========================= */
+
 
 .why-niche {
   background: #f4ece7;
   padding: 80px 24px;
 }
 
-/* Main centered column */
+
 .why-niche__container {
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center; /* 🔑 fixes left drift */
+  align-items: center; 
   text-align: center;
 }
 
-/* =========================
-   HEADER
-========================= */
+
 
 .why-niche__kicker {
     color: #102f25;
@@ -510,9 +480,7 @@ body {
     text-align: center;
 }
 
-/* =========================
-   REASONS GRID
-========================= */
+
 
 .why-niche__reasons {
   list-style: none;
@@ -521,7 +489,7 @@ body {
   gap: 64px;
   padding: 0;
   margin: 0 auto;
-  max-width: 800px; /* tighter than header */
+  max-width: 800px; 
   width: 100%;
 }
 
@@ -531,13 +499,13 @@ body {
   text-align: center;
 }
 
-/* Icons */
+
 .why-niche__reason img {
   height: 80px;
   margin-bottom: 24px;
 }
 
-/* Titles (equal height fix) */
+
 .why-niche__reason h3 {
       font-size: 1rem;
     font-weight: 700;
@@ -551,7 +519,7 @@ body {
     justify-content: center;
 }
 
-/* Body text */
+
 .why-niche__reason p {
     color: #102f25;
     text-align: center;
@@ -561,11 +529,9 @@ body {
     font-weight: 400;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
 
-/* Tablet */
+
+
 @media (max-width: 1024px) {
   .why-niche__reasons {
     gap: 48px;
@@ -573,7 +539,7 @@ body {
   }
 }
 
-/* Mobile */
+
 @media (max-width: 768px) {
   .why-niche {
     padding: 20px 24px;
@@ -593,9 +559,7 @@ body {
 
 /* testimonial */
 
-/* =========================
-   BASE
-========================= */
+
 .testimonial {
   position: relative;
   background: #f4ece7;
@@ -603,9 +567,7 @@ body {
   z-index: 12;
 }
 
-/* =========================
-   CURVE
-========================= */
+
 .testimonial__curve {
   position: absolute;
   top: -10rem;
@@ -627,9 +589,7 @@ body {
   fill: #fff;
 }
 
-/* =========================
-   CONTENT
-========================= */
+
 .testimonial__content {
   position: relative;
   z-index: 1;
@@ -646,9 +606,7 @@ body {
   align-items: center;
 }
 
-/* =========================
-   LEFT
-========================= */
+
 .testimonial__left {
   display: flex;
   flex-direction: column;
@@ -672,12 +630,10 @@ body {
   width: 512px;
 }
 
-/* =========================
-   QUOTES (CRITICAL FIX)
-========================= */
+
 .testimonial__quotes {
   position: relative;
-  min-height: 200px; /* REQUIRED */
+  min-height: 200px; 
       padding-left: 10rem;
 }
 
@@ -691,7 +647,7 @@ body {
 
 .testimonial__quote.active {
   opacity: 1;
-  position: relative; /* RESTORES LAYOUT */
+  position: relative; 
 }
 
 .testimonial__quote::before {
@@ -728,9 +684,7 @@ body {
   color: #102f25;
 }
 
-/* =========================
-   DOTS
-========================= */
+
 .testimonial__dots {
   margin-top: 0px;
   display: flex;
@@ -753,9 +707,7 @@ body {
   transform: scale(1.25);
 }
 
-/* =========================
-   RIGHT
-========================= */
+
 .testimonial__images {
   position: relative;
       height: 620px;
@@ -779,34 +731,32 @@ body {
   border-radius: 24px;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+
 @media (max-width: 1024px) {
   .testimonial__grid {
-    grid-template-columns: 1fr 1fr; /* 50 / 50 */
-    gap: 10px; /* tighter gap */
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px; 
   }
 
   .testimonial__left {
-    padding-right: 0; /* REMOVE desktop padding */
+    padding-right: 0; 
     padding-left: 0;
   }
 
   .testimonial__title {
-    width: 100%; /* prevent artificial shrinking */
+    width: 100%; 
   }
 
   .testimonial__quotes {
-    padding-left: 0; /* REMOVE desktop quote offset */
+    padding-left: 0; 
   }
 
   .testimonial__quote {
-    padding-left: 40px; /* keep quote mark spacing only */
+    padding-left: 40px; 
   }
 
   .testimonial__images {
-    height: 420px; /* restore presence */
+    height: 420px; 
   }
 
   .testimonial__quote::after {
@@ -823,11 +773,11 @@ body {
 
 @media (max-width: 768px) {
   .testimonial__grid {
-    grid-template-columns: 1fr; /* stack */
+    grid-template-columns: 1fr; 
     gap: 40px;
   }
 
-  /* LEFT (TEXT) */
+  
   .testimonial__left {
     padding: 0;
   }
@@ -837,7 +787,7 @@ body {
   }
 
   .testimonial__quote {
-    padding-left: 36px; /* space for opening quote */
+    padding-left: 36px; 
   }
 
   .testimonial__quote::after {
@@ -845,17 +795,17 @@ body {
   }
 
   .testimonial__dots {
-    align-self: center; /* dots under text */
+    align-self: center; 
   }
 
-  /* RIGHT (IMAGE) */
+  
   .testimonial__right {
     width: 100%;
   }
 
   .testimonial__images {
     position: relative;
-    height: 320px; /* mobile-friendly height */
+    height: 320px; 
   }
 
   .testimonial__image {
@@ -888,25 +838,21 @@ body {
 
 /* track */
 
-/* =========================
-   BASE
-========================= */
+
 .stay-track {
   position: relative;
   background: #FFF;
   z-index: 12;
 }
 
-/* =========================
-   CURVE
-========================= */
+
 .stay-track__curve {
  position: absolute;
   top: -22rem;
   left: 0;
   width: 100%;
-  height: 180%;          /* ✅ MATCH SECTION HEIGHT */
-  overflow: hidden;      /* ✅ CLIP SVG */
+  height: 180%;          
+  overflow: hidden;     
   pointer-events: none;
 }
 
@@ -916,9 +862,7 @@ body {
   fill: #247c39;
 }
 
-/* =========================
-   CONTENT
-========================= */
+
 .stay-track__content {
   position: relative;
   z-index: 1;
@@ -935,12 +879,7 @@ padding: 12rem 0 3rem;
   align-items: center;
 }
 
-/* =========================
-   LEFT
-========================= */
-/* =========================
-   LEFT : IMAGE
-========================= */
+
 
 .stay-track__visual {
   display: flex;
@@ -955,9 +894,7 @@ padding: 12rem 0 3rem;
   display: block;
 }
 
-/* =========================
-   RIGHT
-========================= */
+
 
 .stay-track__right {
     width: 400px;
@@ -1000,9 +937,7 @@ padding: 12rem 0 3rem;
         font-weight: 600;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+
 @media (max-width: 1024px) {
   .stay-track__grid {
     gap: 40px;
@@ -1055,17 +990,13 @@ padding: 12rem 0 3rem;
 
 /* choose school */
 
-/* =========================
-   BASE
-========================= */
+
 .choose-school {
   position: relative;
   overflow: hidden;
 }
 
-/* =========================
-   BACKGROUND SPLIT
-========================= */
+
 .choose-school__bg {
   position: absolute;
   inset: 0;
@@ -1082,9 +1013,7 @@ padding: 12rem 0 3rem;
   background: #ff9800;
 }
 
-/* =========================
-   BADGE
-========================= */
+
 .choose-school__badge {
       position: absolute;
     top: 40px;
@@ -1097,9 +1026,7 @@ padding: 12rem 0 3rem;
   width: 160px;
 }
 
-/* =========================
-   CONTENT
-========================= */
+
 .choose-school__content {
   position: relative;
   z-index: 1;
@@ -1116,9 +1043,7 @@ padding: 12rem 0 3rem;
   padding-top: 10rem;
 }
 
-/* =========================
-   LEFT
-========================= */
+
 
 .choose-school__left {
     width: 380px;
@@ -1174,9 +1099,7 @@ padding: 12rem 0 3rem;
    
 }
 
-/* =========================
-   RIGHT (VISUAL)
-========================= */
+
 .choose-school__right {
   display: flex;
   justify-content: end;
@@ -1192,9 +1115,6 @@ padding: 12rem 0 3rem;
   border-radius: 16px;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
 @media (max-width: 1024px) {
   .choose-school__grid {
     gap: 40px;
@@ -1261,9 +1181,7 @@ padding: 12rem 0 3rem;
 
 /* Ranking */
 
-/* =========================
-   BASE
-========================= */
+
 .home-rankings {
   position: relative;
   background: #102f25;
@@ -1271,9 +1189,7 @@ padding: 12rem 0 3rem;
   
 }
 
-/* =========================
-   WAVE
-========================= */
+
 .home-wavy-edge--rankings {
   position: absolute;
   top: -14px;
@@ -1293,9 +1209,7 @@ padding: 12rem 0 3rem;
   fill: #102f25;
 }
 
-/* =========================
-   CONTAINER
-========================= */
+
 .home-rankings__container {
   position: relative;
   z-index: 1;
@@ -1305,9 +1219,7 @@ padding: 12rem 0 3rem;
   text-align: center;
 }
 
-/* =========================
-   TEXT
-========================= */
+
 .home-rankings__kicker {
       font-size: 1.2rem;
     line-height: 1;
@@ -1352,17 +1264,15 @@ padding: 12rem 0 3rem;
    
 }
 
-/* =========================
-   BADGES
-========================= */
+
 .home-rankings__grid {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 48px;
 
-  max-width: 730px;     /* ✅ constrain badges */
-  margin: 0 auto;       /* ✅ center container */
+  max-width: 730px;     
+  margin: 0 auto;       
   padding: 0;
 }
 
@@ -1404,9 +1314,7 @@ padding: 12rem 0 3rem;
 .home-rankings__link:hover.home-rankings__link span{
   color: #ffffff !important;
 }
-/* =========================
-   RESPONSIVE
-========================= */
+
 @media (max-width: 768px) {
   .home-rankings__container {
     padding: 100px 20px 80px;
@@ -1420,10 +1328,7 @@ padding: 12rem 0 3rem;
 
 
 
-/* partner */
-/* =========================
-   BASE
-========================= */
+
 .partners {
   position: relative;
   background: #f4ece7;
@@ -1432,9 +1337,7 @@ padding: 12rem 0 3rem;
 
 
 
-/* =========================
-   CONTENT
-========================= */
+
 .partners__content {
   position: relative;
   padding: 7rem 0 5rem;
@@ -1448,9 +1351,7 @@ padding: 12rem 0 3rem;
   align-items: center;
 }
 
-/* =========================
-   LEFT
-========================= */
+
 .partners__copy {
   grid-column: 2;
 }
@@ -1509,9 +1410,7 @@ padding: 12rem 0 3rem;
 .partners__btn:hover {
     background: var(--green-btn-hover);
 }
-/* =========================
-   RIGHT
-========================= */
+
 .partners__visual {
   grid-column: 3;
 }
@@ -1522,9 +1421,7 @@ padding: 12rem 0 3rem;
   display: block;
 }
 
-/* =========================
-   LOGOS
-========================= */
+
 .partners__logos-wrap {
   margin-top: 4rem;
   text-align: center;
@@ -1570,9 +1467,7 @@ padding: 12rem 0 3rem;
   opacity: 0.9;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+
 @media (max-width: 1024px) {
   .partners__grid {
     grid-template-columns: 1fr 1fr;
@@ -1609,9 +1504,6 @@ padding: 12rem 0 3rem;
 
 /* start last */
 
-/* =========================
-   BASE
-========================= */
 .home-started {
   position: relative;
   background: #d0e0ec;
@@ -1620,9 +1512,7 @@ padding: 12rem 0 3rem;
 
 
 
-/* =========================
-   CONTAINER
-========================= */
+
 .home-started__container {
   max-width: 1200px;
   margin: 0 auto;
@@ -1636,9 +1526,7 @@ padding: 12rem 0 3rem;
   align-items: center;
 }
 
-/* =========================
-   LEFT
-========================= */
+
 .home-started__visual {
   display: flex;
   justify-content: center;
@@ -1651,9 +1539,7 @@ padding: 12rem 0 3rem;
   height: auto;
 }
 
-/* =========================
-   RIGHT
-========================= */
+
 .home-started__content {
     max-width: 480px;
     display: flex;
@@ -1683,9 +1569,7 @@ padding: 12rem 0 3rem;
   text-align: center;
 }
 
-/* =========================
-   CTA
-========================= */
+
 .home-started__ctas {
   display: flex;
   flex-direction: column;
@@ -1708,9 +1592,7 @@ padding: 12rem 0 3rem;
   background: #1f5f2c;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+
 @media (max-width: 1024px) {
   .home-started__grid {
     gap: 1px;

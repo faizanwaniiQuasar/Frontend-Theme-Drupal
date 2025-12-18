@@ -7,9 +7,7 @@ body {
 }
 
 
-/* =========================
-   MAIN TWO-COLUMN LAYOUT
-========================= */
+
 .search-layout {
   max-width: 1080px;
   margin: 0 auto;
@@ -32,7 +30,7 @@ body {
 }
 }
 
-/* LEFT COLUMN */
+
 .search-controls-wrapper {
    width: 100%;
   max-width: 1080px;
@@ -41,7 +39,7 @@ body {
   
 }
 
-/* RIGHT COLUMN */
+
 .search-results {
   width: 100%;
 }
@@ -64,7 +62,7 @@ body {
 
 
 
-/* BUTTONS */
+
 .btn {
   border-radius: 999px;
   padding: 10px 18px;
@@ -104,7 +102,7 @@ background-color: #03df8b;
   color: #0b2f24;
 }
 
-/* MOBILE ACTION BAR */
+
 .search-controls-mobile-actions {
   display: none;
   gap: 12px;
@@ -112,10 +110,10 @@ background-color: #03df8b;
   background: #fff;
 }
 
-/* DESKTOP MAP BUTTON */
+
 .desktop-only { display: none; }
 
-/* SIDEBAR */
+
 .search-controls {
   background: #fff;
   width: 244px;
@@ -172,7 +170,7 @@ label {
 
 .indent { padding-left: 18px; }
 
-/* SELECT */
+
 .filter-select {
   width: 100%;
   padding: 10px 12px;
@@ -181,7 +179,7 @@ label {
   font-size: 14px;
 }
 
-/* SEGMENTED */
+
 .segmented-control {
   display: flex;
   border: 1px solid #c9c9c9;
@@ -202,13 +200,13 @@ label {
   color: #fff;
 }
 
-/* RANGE */
+
 .range-slider {
   width: 100%;
   margin-top: 12px;
 }
 
-/* GRADES */
+
 .grade-row {
   display: flex;
   justify-content: space-between;
@@ -229,9 +227,6 @@ label {
 
 
 
-/* =========================
-   CUSTOM SELECT (Niche)
-========================= */
 
 .custom-select {
   position: relative;
@@ -258,7 +253,7 @@ label {
   transform: rotate(180deg);
 }
 
-/* Dropdown panel */
+
 .custom-select__menu {
   position: absolute;
   top: calc(100% + 4px);
@@ -283,7 +278,6 @@ label {
   display: block;
 }
 
-/* Options */
 .custom-select__option {
   padding: 8px 16px;
   font-size: 14px;
@@ -295,12 +289,12 @@ label {
   transition: background-color 300ms ease-in-out;
 }
 
-/* Hover */
+
 .custom-select__option:hover {
   background-color: rgba(0, 68, 54, 0.08);
 }
 
-/* Selected */
+
 .custom-select__option.selected {
   background-color: rgba(0, 68, 54, 0.12);
   font-weight: 600;
@@ -316,12 +310,12 @@ label {
   visibility: visible;
 }
 
-/* MOBILE */
+
 .search-controls-actions {
   display: none;
 }
 
-/* RESPONSIVE */
+
 @media (min-width: 768px) {
   .desktop-only { display: inline-block; }
 }
@@ -366,7 +360,7 @@ label {
 
 
 /* //adding new */
-/* FILTER HEADER */
+
 .filter-header {
   display: flex;
   justify-content: space-between;
@@ -402,7 +396,7 @@ label {
   white-space: nowrap;
 }
 
-/* NICHE GRADES */
+
 .grade-block {
   margin-bottom: 14px;
 }

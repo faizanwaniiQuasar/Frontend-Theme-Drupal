@@ -10,7 +10,7 @@
 
 a { text-decoration: none; color: inherit; }
 
-/* Header shell */
+
 .site-header {
   background: #fff;
   border-bottom: 2px solid #ececec;
@@ -29,14 +29,14 @@ a { text-decoration: none; color: inherit; }
   position: relative;
 }
 
-/* Brand */
+
 .brand-logo {
   height: 30px;
   display: block;
   line-height: 1;
 }
 
-/* NAV */
+
 .main-nav { flex: 1; }
 
 .nav-list {
@@ -48,7 +48,6 @@ a { text-decoration: none; color: inherit; }
   margin: 0;
 }
 
-/* Nav link base */
 .nav-item > a {
   font-weight: 600;
   padding: 6px 4px;
@@ -83,7 +82,7 @@ nav.main-nav:hover button.more-btn {
     
 }
 
-/* Header actions search n auth buttons */
+
 .header-actions {
   display: flex;
   align-items: center;
@@ -117,7 +116,7 @@ button.search-btn {
 
 
 
-/* Buttons */
+
 .btn1 {
   padding: 8px 18px;
   border-radius: 24px;
@@ -136,7 +135,7 @@ button.search-btn {
   color: #fff;
 }
 
-/* Nav toggle (hamburger) */
+
 .nav-toggle {
   display: none;
   background: none;
@@ -145,7 +144,7 @@ button.search-btn {
   cursor: pointer;
 }
 
-/* MEGA MENU - desktop centered  */
+
 .mega {
   position: fixed;
   top: 0;
@@ -171,7 +170,7 @@ button.search-btn {
   transform: translateX(-50%) translateY(0);
 }
 
-/* Mega columns */
+
 .mega-col {
   flex: 1;
   min-width: 140px;
@@ -191,21 +190,21 @@ button.search-btn {
 .mega-col ul li { margin-bottom: 8px; }
 .mega-col a { color: #333; font-size: 15px; display: inline-block; padding: 2px 0; }
 
-/* Accessibility focus ring */
+
 a:focus, button:focus {
   outline: 3px solid rgba(31,95,67,0.12);
   outline-offset: 2px;
 }
 
-/*TABLET / MOBILE (<=1024px) */
-/* Header layout: hamburger left, logo centered, signup right */
+
+
 @media (max-width: 1024px) {
   .nav-toggle { display: block; }
 
-  /* hide desktop nav */
+  
   .main-nav { display: none; }
 
-  /* change header-inner layout: keep it simple and position brand centered */
+  
   .header-inner {
     display: flex;
     align-items: center;
@@ -214,21 +213,21 @@ a:focus, button:focus {
     gap: 8px;
   }
 
-  /* absolutely center brand within header */
+  
   .brand { position: absolute; left: 50%; transform: translateX(-50%); pointer-events: none; }
   .brand .brand-logo { pointer-events: auto; } /* allow clicks on logo */
 
-  /* left hamburger visible (already), right area keep signup */
+  
   .header-actions { position: absolute; right: 18px; display:flex; align-items:center; gap:8px; }
 
-  /* hide header search and login on tablet/mobile to match screenshot */
+  
   button.search-btn, .btn-outline { display: none; }
 
-  /* desktop mega should not be fixed on mobile */
+ 
   .mega { display: none !important; }
 }
 
-/* MOBILE OVERLAY STYLES */
+
 .mobile-overlay {
   position: fixed;
   inset: 0;
@@ -244,7 +243,7 @@ a:focus, button:focus {
 
 body.menu-open-mobile .mobile-overlay { display: block; }
 
-/* overlay topbar */
+
 .mobile-overlay .overlay-top {
   display:flex;
   align-items:center;
@@ -257,7 +256,7 @@ body.menu-open-mobile .mobile-overlay { display: block; }
 .mobile-overlay .overlay-top .overlay-logo img { height:34px; display:block; margin:0 auto; }
 .mobile-overlay .overlay-top .overlay-signup .btn-primary { margin-left:6px; }
 
-/* search block */
+
 .mobile-overlay .overlay-search { padding:14px 16px; border-bottom:1px solid #eee; }
 .mobile-overlay .find-input { display:flex; gap:8px; align-items:center; }
 .mobile-overlay .find-input input[type="search"] {
@@ -265,10 +264,10 @@ body.menu-open-mobile .mobile-overlay { display: block; }
 }
 .mobile-overlay .find-input button { border:none; background:none; font-size:18px; padding:8px; cursor:pointer; }
 
-/* location */
+
 .mobile-overlay .overlay-location { padding:8px 16px 14px 16px; border-bottom:1px solid #eee; display:flex; gap:8px; align-items:center; color:#666; }
 
-/* LOCATION as input */
+
 .mobile-overlay .overlay-location input[type="text"]{
   flex:1;
   padding:8px 10px;
@@ -284,7 +283,7 @@ body.menu-open-mobile .mobile-overlay { display: block; }
   cursor:pointer;
 }
 
-/* remove bullets for overlay lists */
+
 .mobile-overlay .overlay-nav ul,
 .mobile-overlay .overlay-nav li {
   list-style: none;
@@ -292,7 +291,7 @@ body.menu-open-mobile .mobile-overlay { display: block; }
   padding: 0;
 }
 
-/* accordion */
+
 .mobile-overlay .overlay-nav { padding:8px 0 80px 0; }
 .mobile-overlay .accordion-item { border-bottom:1px solid #f0f0f0; }
 .mobile-overlay .accordion-header { display:flex; justify-content:space-between; align-items:center; padding:14px 16px; font-weight:700; color:var(--green-dark); cursor:pointer; }
@@ -302,7 +301,7 @@ body.menu-open-mobile .mobile-overlay { display: block; }
 .mobile-overlay .accordion-panel.open { padding:12px 16px 18px 16px; max-height:600px; }
 .mobile-overlay .accordion-panel a { display:block; padding:8px 0; color:#333; font-size:15px; }
 
-/* small screens tweaks */
+
 @media (max-width: 480px) {
   .brand { left: 50%; transform: translateX(-50%); }
   .mobile-overlay .overlay-top .overlay-logo img { height:30px; }
@@ -312,29 +311,28 @@ body.menu-open-mobile .mobile-overlay { display: block; }
 
 
 
-/* === Mobile fix patch (put at end of styles/header.css) === */
-/* Ensure correct viewport scaling (also requires meta tag in head) */
+
+
 html, body {
   width: 100%;
   -webkit-text-size-adjust: 100%;
 }
 
-/* Make images responsive (logo included) */
 img, .brand-logo {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-/* Force container to full width on very small screens */
+
 @media (max-width: 420px) {
   .header-inner {
-    max-width: 100% !important;   /* allow header to use full viewport */
+    max-width: 100% !important;   
     padding: 10px 12px !important;
     gap: 8px;
   }
 
-  /* Center brand properly without weird absolute offsets on tiny screens */
+ 
   .brand {
     position: static !important;
     left: auto !important;
@@ -343,7 +341,7 @@ img, .brand-logo {
     pointer-events: auto;
   }
 
-  /* Ensure left hamburger, center logo, right signup stays visually centered */
+  
   .nav-toggle {
     display: block;
     font-size: 20px;
@@ -380,7 +378,7 @@ img, .brand-logo {
 
   .site-header, .header-inner, .main-nav, .mobile-overlay { max-width: 100% !important; }
 }
-/* DESKTOP HEADER SEARCH */
+
 
 .desktop-search {
   display: none;
@@ -424,7 +422,7 @@ img, .brand-logo {
   color: #0d3b34;
 }
 
-/* Suggestions dropdown */
+
 .desktop-search__suggestions {
   position: absolute;
   top: 100%;
@@ -451,7 +449,7 @@ img, .brand-logo {
   background: #f4f4f4;
 }
 
-/* Close button */
+
 .desktop-search__close {
   background: none;
   border: none;
@@ -460,12 +458,12 @@ img, .brand-logo {
   padding: 8px;
 }
 
-/* Open state */
+
 .site-header.search-open + .desktop-search {
   display: block;
 }
 
-/* Desktop only */
+
 @media (max-width: 1024px) {
   .desktop-search {
     display: none !important;

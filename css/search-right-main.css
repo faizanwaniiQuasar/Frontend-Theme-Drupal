@@ -1,10 +1,10 @@
-/* RESULTS CONTAINER */
+
 .search-results {
   flex: 1;
   padding-left: 24px;
 }
 
-/* META */
+
 .search-results__meta {
   text-align: right;
   font-size: 13px;
@@ -12,7 +12,7 @@
   margin-bottom: 12px;
 }
 
-/* LIST */
+
 .results-list {
   list-style: none;
   margin: 0;
@@ -24,7 +24,7 @@
 }
 
 
-/* CARD BASE */
+
 .search-card {
   background: #fff;
   border-radius: 3px;
@@ -32,7 +32,7 @@
   overflow: hidden;
 }
 
-/* CLICKABLE AREA */
+
 .search-card__link {
   display: grid;
   grid-template-columns: 1fr 150px;
@@ -40,18 +40,18 @@
   color: inherit;
 }
 
-/* CONTENT */
+
 .search-card__content {
   padding: 20px 24px;
 }
 
-/* IMAGE */
+
 .search-card__image {
   background-size: cover;
   background-position: center;
 }
 
-/* RANK */
+
 .search-card__rank {
   
   
@@ -67,7 +67,7 @@
 }
 
 
-/* TITLE */
+
 .search-card__title {
   font-family: Georgia, serif;
  
@@ -99,7 +99,7 @@
     
 }
 
-/* META */
+
 .search-card__meta {
   font-size: 14px;
   color: #555;
@@ -114,7 +114,7 @@
   color: #5f5f5f;
 }
 
-/* SNIPPET */
+
 .search-card__snippet {
   
   
@@ -134,7 +134,7 @@ color: #346dc2;
     text-align: right;
 }
 
-/* FACTS */
+
 .search-card__facts {
  
  
@@ -161,7 +161,6 @@ color: #346dc2;
   font-size: 13px;
 }
 
-/* FOOTER */
 .search-card__footer {
   border-top: 1px solid #eee;
   padding: 12px 24px;
@@ -205,7 +204,7 @@ color: #346dc2;
 
 
 
-/* MOBILE */
+
 @media (max-width: 767px) {
   .search-card__link {
     grid-template-columns: 1fr;
@@ -218,9 +217,7 @@ color: #346dc2;
 
 
 /* 3cards */
-/* =========================
-   SAFETY: PREVENT LAYOUT OVERFLOW
-========================= */
+
 .search-layout,
 .search-results,
 .search-results__list,
@@ -229,9 +226,7 @@ color: #346dc2;
   overflow-x: hidden;
 }
 
-/* =========================
-   TRAY WRAPPER
-========================= */
+
 .tray-wrap {
   margin: 24px 0;
 }
@@ -240,9 +235,7 @@ color: #346dc2;
   overflow: hidden;
 }
 
-/* =========================
-   POSTCARD LIST (MOBILE FIRST)
-========================= */
+
 .postcards {
   display: flex;
   gap: 16px;
@@ -250,7 +243,7 @@ color: #346dc2;
   padding: 0;
   margin: 0;
 
-  /* 👇 critical */
+ 
   max-width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
@@ -259,19 +252,17 @@ color: #346dc2;
   -webkit-overflow-scrolling: touch;
 }
 
-/* prevent flex items from expanding parent */
+
 .postcards__item {
   flex: 0 0 auto;
   scroll-snap-align: start;
 }
 
-/* =========================
-   CARD
-========================= */
+
 .postcard {
   display: flex;
   flex-direction: column;
-  width: 280px; /* slightly smaller for mobile */
+  width: 280px; 
   background: #fff;
   border-radius: 6px;
   text-decoration: none;
@@ -285,9 +276,7 @@ color: #346dc2;
   box-shadow: 0 4px 10px rgba(0,0,0,0.12);
 }
 
-/* =========================
-   IMAGE
-========================= */
+
 .postcard__image {
   height: 120px;
   background: #f4ebe6;
@@ -300,9 +289,7 @@ color: #346dc2;
   background-position: center;
 }
 
-/* =========================
-   CONTENT
-========================= */
+
 .postcard__content {
   padding: 16px;
 }
@@ -321,16 +308,12 @@ color: #346dc2;
   
 }
 
-/* =========================
-   MOBILE SCROLL BUFFER
-========================= */
+
 .postcards__buffer {
   flex: 0 0 16px;
 }
 
-/* =========================
-   TABLET + DESKTOP (3 CARDS, NO SCROLL)
-========================= */
+
 @media (min-width: 768px) {
   .postcards {
     display: grid;
@@ -358,9 +341,7 @@ color: #346dc2;
 
 /* review css */
 
-/* =========================
-   CARD SHELL
-========================= */
+
 .illustrated-cta__card {
   background: #fff;
   border-radius: 4px;
@@ -368,9 +349,7 @@ color: #346dc2;
   margin: 24px 0;
 }
 
-/* =========================
-   CTA LINK
-========================= */
+
 .illustrated-cta {
   display: flex;
   align-items: center;
@@ -382,9 +361,7 @@ color: #346dc2;
   color: inherit;
 }
 
-/* =========================
-   TEXT
-========================= */
+
 .illustrated-cta__text {
   margin: 0;
   font-family: Georgia, serif;
@@ -404,9 +381,7 @@ color: #346dc2;
     line-height: 31px;
 }
 
-/* =========================
-   ILLUSTRATION
-========================= */
+
 .illustrated-cta__art {
   flex: 0 0 auto;
 }
@@ -421,9 +396,7 @@ color: #346dc2;
   background-position: center;
 }
 
-/* =========================
-   HOVER / FOCUS
-========================= */
+
 .illustrated-cta:hover {
   text-decoration: none;
 }
@@ -433,9 +406,7 @@ color: #346dc2;
   outline-offset: 2px;
 }
 
-/* =========================
-   TABLET
-========================= */
+
 @media (max-width: 1079px) {
   .illustrated-cta {
     padding: 24px 24px;
@@ -451,9 +422,7 @@ color: #346dc2;
   }
 }
 
-/* =========================
-   MOBILE
-========================= */
+
 @media (max-width: 767px) {
   .illustrated-cta {
     padding: 20px;
@@ -473,9 +442,7 @@ color: #346dc2;
 
 
 /* link a section */
-/* =========================
-   INFORMATIONAL CTA
-========================= */
+
 .informational-cta {
   display: block;
   text-decoration: none;
@@ -492,9 +459,7 @@ color: #346dc2;
 
 }
 
-/* =========================
-   IMAGE
-========================= */
+
 .informational-cta__image {
   flex: 0 0 auto;
   width: 96px;
@@ -506,9 +471,7 @@ color: #346dc2;
   background-position: center;
 }
 
-/* =========================
-   CONTENT
-========================= */
+
 .informational-cta__content {
   max-width: 560px;
 }
@@ -540,9 +503,7 @@ color: #346dc2;
   font-weight: 600;
 }
 
-/* =========================
-   HOVER / FOCUS
-========================= */
+
 .informational-cta:hover {
   text-decoration: none;
 }
@@ -552,9 +513,7 @@ color: #346dc2;
   outline-offset: 2px;
 }
 
-/* =========================
-   TABLET
-========================= */
+
 @media (max-width: 1079px) {
   .informational-cta__container {
     padding: 24px;
@@ -570,9 +529,7 @@ color: #346dc2;
   }
 }
 
-/* =========================
-   MOBILE
-========================= */
+
 @media (max-width: 767px) {
   .informational-cta__container {
     padding: 20px;
@@ -592,9 +549,7 @@ color: #346dc2;
 
 /* maps */
 
-/* =========================
-   IFRAME MAP
-========================= */
+
 .iframe-map {
   position: relative;
   width: 100%;
@@ -603,7 +558,7 @@ color: #346dc2;
   overflow: hidden;
 }
 
-/* iframe */
+
 .iframe-map iframe {
   width: 100%;
   height: 100%;
@@ -612,7 +567,7 @@ color: #346dc2;
   pointer-events: auto;
 }
 
-/* Attribution */
+
 .static-map-attribution {
   position: absolute;
   right: 8px;
@@ -631,18 +586,16 @@ color: #346dc2;
   margin-left: 4px;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
 
-/* Tablet */
+
+
 @media (max-width: 1024px) {
   .iframe-map {
     height: 380px;
   }
 }
 
-/* Mobile */
+
 @media (max-width: 767px) {
   .iframe-map {
     height: 300px;
@@ -651,18 +604,14 @@ color: #346dc2;
 
 
 /* pagination */
-/* =========================
-   PAGINATION WRAPPER
-========================= */
+
 .search-pagination-container {
   margin: 40px 0 24px;
   display: flex;
   justify-content: center;
 }
 
-/* =========================
-   PAGINATION
-========================= */
+
 .pagination {
   display: inline-flex;
 }
@@ -676,9 +625,7 @@ color: #346dc2;
   margin: 0;
 }
 
-/* =========================
-   BUTTONS
-========================= */
+
 .pagination__btn {
   min-width: 36px;
   height: 36px;
@@ -697,12 +644,12 @@ color: #346dc2;
   transition: background-color 200ms ease, color 200ms ease;
 }
 
-/* Hover */
+
 .pagination__btn:hover {
   background-color: rgba(0, 68, 54, 0.08);
 }
 
-/* Active */
+
 .pagination__btn.active {
  background-color: #004436;
   color: #fff;
@@ -712,23 +659,19 @@ color: #346dc2;
     border-radius: 100%;
 }
 
-/* Disabled */
+
 .pagination__btn:disabled {
   opacity: 0.35;
   cursor: not-allowed;
 }
 
-/* =========================
-   NAV ARROWS
-========================= */
+
 .pagination__btn--nav {
   font-size: 18px;
   line-height: 34px;
 }
 
-/* =========================
-   ELLIPSIS
-========================= */
+
 .pagination__ellipsis {
   padding: 0 6px;
   font-size: 16px;
@@ -736,24 +679,22 @@ color: #346dc2;
   user-select: none;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
 
-/* Tablet */
+
+
 @media (max-width: 1024px) {
   .search-pagination-container {
     margin-top: 32px;
   }
 }
 
-/* Mobile */
+
 @media (max-width: 767px) {
   .pagination__list {
     gap: 4px;
   }
 
-  /* Hide middle pages on mobile */
+  
   .pagination__btn:not(.active):not(.pagination__btn--nav),
   .pagination__ellipsis {
     display: none;

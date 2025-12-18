@@ -14,9 +14,7 @@
   --divider-thickness: 1px;
 }
 
-/* 
-   Utilities
- */
+
 .container{
   max-width: var(--container-max);
   margin-inline: auto;
@@ -24,9 +22,7 @@
   box-sizing: border-box;
 }
 
-/*
-   Footer base
-    */
+
 .site-footer {
   background: var(--footer-bg);
   color: var(--muted-text);
@@ -37,9 +33,7 @@
   margin-top: 2rem;
 }
 
-/* 
-   Breadcrumb
-    */
+
 .footer-breadcrumb {
   max-width: var(--container-max);
   margin: 0 auto 0.6rem;
@@ -53,9 +47,7 @@
 .footer-breadcrumb .breadcrumb__sep { color: #9aa8c1; }
 .footer-breadcrumb .breadcrumb__current { color: var(--brand-blue); }
 
-/* 
-   Grid layout
-   */
+
 .site-footer__cols {
   display: grid;
   grid-template-columns: var(--left-col) 1fr;
@@ -66,9 +58,7 @@
   position: relative;
 }
 
-/* 
-   Divider n Logo
-  */
+
 .footer-top-divider.grid-span{
   grid-column: 1 / -1;
   position: relative;
@@ -117,9 +107,7 @@
   display:block;
 }
 
-/* 
-   LEFT COLUMN
-   */
+
 .site-footer__left{
   display:flex;
   flex-direction:column;
@@ -160,9 +148,7 @@
   font-size:0.875rem;
 }
 
-/* 
-   RIGHT COLUMN
-    */
+
 .site-footer__right{
   display:flex;
   flex-direction:column;
@@ -203,9 +189,7 @@
 }
 .footer-claim a{ color:var(--brand-blue); text-decoration:underline; }
 
-/* 
-   LINK COLUMNS
-    */
+
 .footer-links-columns{
   width:100%;
   display:flex;
@@ -236,9 +220,7 @@
 }
 .links-col a:hover{ text-decoration:underline; }
 
-/*
-   App Row
-   */
+
 .footer-approw{
   text-align:center;
   display:flex;
@@ -256,7 +238,7 @@
 
 
 
-/*m TABLET */
+
 @media (max-width:64rem){
   .site-footer__cols{ grid-template-columns:1fr; }
 
@@ -291,7 +273,7 @@
 }
 }
 
-/* /MOBILE / */
+
 @media (max-width:48rem){
   .footer-breadcrumb{
     flex-wrap:wrap;
@@ -312,7 +294,7 @@
   .footer__tagline{ font-size:1rem; }
 }
 
-/*SMALL PHONES */
+
 @media (max-width:30rem){
   .footer-top-divider.grid-span::before,
   .footer-top-divider.grid-span::after{ display:none; }

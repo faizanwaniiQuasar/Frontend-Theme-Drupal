@@ -1,6 +1,6 @@
-/* =========================
-   TOPICS EXPLORER (DESKTOP)
-========================= */
+
+  //  TOPICS EXPLORER (DESKTOP)
+
 const explorer = document.getElementById("topicsExplorer");
 const topicsBtn = document.getElementById("topicsMoreBtn");
 
@@ -16,9 +16,9 @@ if (explorer && topicsBtn) {
   });
 }
 
-/* =========================
-   FILTERS (MOBILE)
-========================= */
+
+  //  FILTERS (MOBILE)
+
 const filtersWrapper = document.querySelector(".search-controls-wrapper");
 const openFiltersBtn = document.getElementById("openFilters");
 const closeFiltersBtn = document.getElementById("closeFilters");
@@ -31,9 +31,9 @@ closeFiltersBtn?.addEventListener("click", () => {
   filtersWrapper?.classList.remove("is-open");
 });
 
-/* =========================
-   SEGMENTED CONTROL
-========================= */
+
+  //  SEGMENTED CONTROL
+
 document.querySelectorAll(".segmented-control").forEach(control => {
   control.addEventListener("click", e => {
     if (!e.target.classList.contains("segment")) return;
@@ -46,9 +46,9 @@ document.querySelectorAll(".segmented-control").forEach(control => {
   });
 });
 
-/* =========================
-   CUSTOM DROPDOWN (GRADE)
-========================= */
+
+  //  CUSTOM DROPDOWN (GRADE)
+
 document.querySelectorAll("[data-select]").forEach(select => {
   const trigger = select.querySelector(".custom-select__trigger");
   const value = select.querySelector(".custom-select__value");
@@ -78,9 +78,9 @@ document.querySelectorAll("[data-select]").forEach(select => {
   });
 });
 
-/* =========================
-   CLOSE DROPDOWNS ON CLICK OUTSIDE
-========================= */
+
+  //  CLOSE DROPDOWNS ON CLICK OUTSIDE
+
 document.addEventListener("click", () => {
   document
     .querySelectorAll(".custom-select.open")
@@ -88,9 +88,9 @@ document.addEventListener("click", () => {
 });
 
 
-/* =========================
-   CLEAR FILTERS (CHECKBOXES)
-========================= */
+
+  //  CLEAR FILTERS (CHECKBOXES)
+
 document.querySelectorAll('.filter-group').forEach(group => {
   const clearBtn = group.querySelector('.clear-filter');
   if (!clearBtn) return;
@@ -109,9 +109,9 @@ document.querySelectorAll('.filter-group').forEach(group => {
   });
 });
 
-/* =========================
-   RANGE SLIDERS
-========================= */
+
+  //  RANGE SLIDERS
+
 document.querySelectorAll('.filter-group[data-range]').forEach(group => {
   const slider = group.querySelector('.range-slider');
   const bubble = group.querySelector('.range-bubble');
@@ -155,9 +155,9 @@ document.querySelectorAll('.filter-group[data-range]').forEach(group => {
   });
 });
 
-/* =========================
-   NICHE GRADES (RADIO)
-========================= */
+
+  //  NICHE GRADES (RADIO)
+
 document.querySelectorAll('[data-grade]').forEach(block => {
   const buttons = block.querySelectorAll('.grade-pills button');
   const clearBtn = block.querySelector('.clear-filter');

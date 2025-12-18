@@ -1,4 +1,4 @@
-// scripts/header.js  (updated - minimal changes)
+// scripts/header.js 
 (function () {
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", init);
@@ -20,7 +20,7 @@
       console.warn("header.js: .nav-list not found");
     }
 
-    // ---------- Desktop / Tablet desktop mega logic (preserve existing) ----------
+    // Desktop / Tablet desktop mega logic
     let hideTimer = null;
     let activeMega = null;
 
@@ -333,7 +333,7 @@
     );
   } // init end
 })();
-// ===== Desktop Header Search Logic (ADD-ON) =====
+// ===== Desktop Header Search Logic 
 (function () {
   const header = document.querySelector(".site-header");
   const searchBtn = document.querySelector(".search-btn");
