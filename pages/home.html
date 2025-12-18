@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Section</title>
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ===== HEADER (inlined, no fetch/import) ===== -->
+    <header class="site-header">
+      <div class="header-inner">
+        <button
+          class="nav-toggle"
+          aria-label="Open menu hamburger-size"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+
+        <a href="#" class="brand">
+          <img src="../Assests/Niche logo.svg" alt="Niche" class="brand-logo" />
+        </a>
+
+        <nav class="main-nav" aria-label="Primary">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#">K-12</a></li>
+            <li class="nav-item"><a href="#">Colleges</a></li>
+
+            <li class="nav-item">
+              <a href="#">Graduate Schools</a>
+
+              <!-- Mega Menu -->
+              <div class="mega">
+                <div class="mega-col">
+                  <h4>K-12 Schools</h4>
+                  <ul>
+                    <li><a href="#">Review Your School</a></li>
+                    <li><a href="#">Schools Near You</a></li>
+                    <li><a href="#">Compare Schools</a></li>
+                  </ul>
+                </div>
+
+                <div class="mega-col">
+                  <h4>Colleges</h4>
+                  <ul>
+                    <li><a href="#">True Cost</a></li>
+                    <li><a href="#">Direct Admissions</a></li>
+                    <li><a href="#">Review Your College</a></li>
+                  </ul>
+                </div>
+
+                <div class="mega-col">
+                  <h4>Graduate Schools</h4>
+                  <ul>
+                    <li><a href="#">Review Your Grad School</a></li>
+                    <li><a href="#">Grad School Search</a></li>
+                  </ul>
+                </div>
+
+                <div class="mega-col">
+                  <h4>Places to Live</h4>
+                  <ul>
+                    <li><a href="#">Review Your Area</a></li>
+                    <li><a href="#">Find Places to Live</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a href="#">Scholarships & Financial Aid</a>
+            </li>
+            <li class="nav-item fade"><a href="#">Places to Live</a></li>
+
+            <li class="nav-item more">
+              <button class="more-btn" aria-expanded="false">•••</button>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button class="search-btn" aria-label="Search">
+            <img src="../Assests/Button - Open Searchbars.svg" alt="search" />
+          </button>
+          <a class="btn1 btn-outline" href="#">Log In</a>
+          <a class="btn1 btn-primary" href="#">Sign Up</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===== end header ===== -->
+
+    <!-- ===== Desktop Header Search (Desktop Only) ===== -->
+    <div class="desktop-search" aria-hidden="true">
+      <div class="desktop-search__inner">
+        <!-- FIND -->
+        <div class="desktop-search__field desktop-search__field--find">
+          <input
+            type="text"
+            placeholder="Find a college or university ..."
+            aria-label="Find"
+            class="desktop-search__input"
+            autocomplete="off"
+          />
+
+          <!-- Suggestions -->
+          <ul class="desktop-search__suggestions" role="listbox">
+            <li>K-12 Schools</li>
+            <li>K-12 Districts</li>
+            <li>Colleges</li>
+            <li>Graduate Schools</li>
+            <li>Places to Live</li>
+          </ul>
+        </div>
+
+        <!-- IN -->
+        <div class="desktop-search__field desktop-search__field--location">
+          <input
+            type="text"
+            placeholder="In America"
+            aria-label="Location"
+            class="desktop-search__input"
+          />
+          <span class="desktop-search__icon">📍</span>
+        </div>
+
+        <!-- CLOSE -->
+        <button class="desktop-search__close" aria-label="Close search">
+          ✕
+        </button>
+      </div>
+    </div>
+
+    <!-- LOGIN MODAL -->
+    <!-- AUTH MODAL (shared for sign in + sign up) -->
+    <div
+      class="modal-overlay"
+      id="authModal"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div class="modal-card" role="document" aria-labelledby="authTitle">
+        <button
+          class="modal-close"
+          id="authClose"
+          aria-label="Close auth modal"
+        >
+          &times;
+        </button>
+
+        <h2 class="modal-title" id="authTitle">Sign in to Niche</h2>
+
+        <form class="modal-form" id="authForm" novalidate>
+          <!-- Email -->
+          <div class="modal-row">
+            <label for="authEmail">Email</label>
+            <input
+              id="authEmail"
+              name="email"
+              type="email"
+              placeholder="Email"
+              required
+              autocomplete="email"
+            />
+          </div>
+
+          <!-- Password -->
+          <div class="modal-row">
+            <label for="authPassword">Password</label>
+            <div class="password-wrapper">
+              <input
+                id="authPassword"
+                name="password"
+                type="password"
+                placeholder="Password"
+                required
+                autocomplete="current-password"
+              />
+              <button
+                type="button"
+                class="pw-toggle"
+                id="authPwToggle"
+                aria-pressed="false"
+                aria-label="Show password"
+              >
+                <!-- eye-open (visible by default) -->
+                <svg
+                  class="eye eye-open"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    fill="none"
+                    stroke="#222"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"
+                  ></path>
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="3"
+                    fill="none"
+                    stroke="#222"
+                    stroke-width="1.6"
+                  ></circle>
+                </svg>
+
+                <!-- eye-closed (hidden by default) -->
+                <svg
+                  class="eye eye-closed"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  focusable="false"
+                  style="display: none"
+                >
+                  <path
+                    fill="none"
+                    stroke="#222"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.94 17.94A10.94 10.94 0 0 1 12 19c-7 0-11-7-11-7a21.09 21.09 0 0 1 5.6-6.6"
+                  ></path>
+                  <path
+                    d="M1 1l22 22"
+                    stroke="#222"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- signup-only checkbox -->
+          <div
+            class="modal-row signup-checkbox"
+            id="signupCheckbox"
+            style="display: none"
+          >
+            <label class="checkbox-label">
+              <input id="signupOptIn" type="checkbox" />
+              <span
+                >I would like to receive email updates from Niche regarding
+                account notifications, college acceptances, and
+                scholarships.</span
+              >
+            </label>
+          </div>
+
+          <!-- forgot link (shown in login) -->
+          <div class="modal-row">
+            <a href="#" class="forgot-link" id="forgotLink">Forgot password?</a>
+          </div>
+
+          <!-- Continue -->
+          <div class="modal-row">
+            <button class="btn-continue" id="authContinue" type="submit">
+              Continue
+            </button>
+          </div>
+        </form>
+
+        <div class="auth-divider">
+          <span class="auth-divider__line"></span>
+          <span class="auth-divider__text">Or</span>
+          <span class="auth-divider__line"></span>
+        </div>
+
+        <div class="social-login">
+          <button class="social-btn google">
+            <img src="../Assests/google.svg" alt="" /> Continue with Google
+          </button>
+          <button class="social-btn facebook">
+            <img src="../Assests/facebook.svg" alt="" /> Continue with Facebook
+          </button>
+          <button class="social-btn apple">
+            <img src="../Assests/apple.svg" alt="" /> Continue with Apple
+          </button>
+        </div>
+
+        <p class="modal-footer-text" id="authFooter">
+          Don't have an account yet?
+          <a href="#" id="switchToSignup">Sign up</a> instead.<br />
+          By proceeding you acknowledge and agree to our
+          <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a>.
+        </p>
+      </div>
+    </div>
+
+    <!-- hero -->
+    <section class="hero">
+      <!-- LEFT COLUMN : IMAGE -->
+      <div class="hero__image">
+        <img
+          src="../Assests/hero-lg.webp"
+          alt="Students laughing around tablet"
+        />
+        <div class="hero__noise"></div>
+      </div>
+
+      <!-- RIGHT COLUMN : CONTENT -->
+      <div class="hero__content">
+        <div class="hero__content-inner">
+          <div class="hero__kicker">Find the School</div>
+
+          <h1 class="hero__title">That Fits You Best</h1>
+
+          <!-- SVG WAVE -->
+          <div class="hero__wave">
+            <svg viewBox="0 0 186 17" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M184.68 8.95C169.95 1.68 152.06 1.68 137.32 8.95C124.03 15.51 107.9 15.51 94.61 8.95C79.88 1.68 61.99 1.68 47.25 8.95C33.96 15.51 17.83 15.51 4.54 8.95L1 7.43"
+              />
+            </svg>
+          </div>
+
+          <p class="hero__description">
+            Finding the right school shouldn’t be hard. From K-12 to college to
+            grad school, we make it easy to discover and connect with the best
+            ones for you.
+          </p>
+
+          <div class="hero__cta">
+            <div class="hero__cta-title">Start Your Search</div>
+
+            <div class="hero__cta-buttons">
+              <a href="#" class="btn">K-12 Schools</a>
+              <a href="#" class="btn">Colleges</a>
+              <a href="#" class="btn">Grad Schools</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Addmissions -->
+    <section class="direct-admissions">
+      <!-- Wavy Top Edge -->
+      <div class="direct-admissions__wave">
+        <div class="direct-admissions__wave-inner">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 45">
+            <path
+              d="M2000,17.26a2.6,2.6,0,0,1-.4.49C1970.2,16.56,1970.41,5,1941,5s-29.42,12.75-58.84,12.75S1852.73,5,1823.31,5s-29.42,12.75-58.83,12.75S1735.06,5,1705.64,5s-29.41,12.75-58.83,12.75S1617.39,5,1588,5s-29.41,12.75-58.83,12.75S1499.72,5,1470.3,5s-29.41,12.75-58.83,12.75S1382.05,5,1352.64,5s-29.42,12.75-58.83,12.75S1264.39,5,1235,5s-29.42,12.75-58.83,12.75S1146.73,5,1117.32,5s-29.42,12.75-58.83,12.75S1029.07,5,999.66,5s-29.42,12.75-58.84,12.75S911.41,5,882,5s-29.41,12.75-58.83,12.75S793.74,5,764.33,5,734.91,17.75,705.5,17.75,676.08,5,646.67,5s-29.42,12.75-58.84,12.75S558.42,5,529,5s-29.41,12.75-58.83,12.75S440.76,5,411.34,5s-29.41,12.75-58.83,12.75S323.1,5,293.68,5s-29.42,12.75-58.83,12.75S205.43,5,176,5,146.6,17.75,117.19,17.75,87.77,5,58.36,5C29.11,5,28.93,17.61,0,17.74V50H2000Z"
+              transform="translate(0 -5)"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Content Wrapper -->
+      <div class="direct-admissions__container">
+        <div class="direct-admissions__grid">
+          <!-- LEFT : CONTENT -->
+          <div class="direct-admissions__content">
+            <div class="direct-admissions__logo">
+              <img
+                src="../Assests/direct-admissions-logo.webp"
+                alt="Niche Direct Admissions"
+              />
+            </div>
+
+            <!-- Mobile Image -->
+            <div class="direct-admissions__image--mobile">
+              <img
+                src="../Assests/home-da.webp"
+                alt="Direct Admissions Illustration"
+              />
+            </div>
+
+            <h2 class="direct-admissions__title">
+              Get accepted without an application.
+            </h2>
+
+            <p class="direct-admissions__text">
+              No application. No waiting.<br />
+              With Direct Admissions, colleges can accept you based on the
+              information in your Niche Profile.
+            </p>
+
+            <div class="direct-admissions__cta">
+              <a href="#" class="ad-btn btn--primary">Create a Niche Profile</a>
+              <a href="#" class="ad-btn btn--outline">Learn more</a>
+            </div>
+          </div>
+
+          <!-- RIGHT : IMAGE (DESKTOP) -->
+          <div class="direct-admissions__image">
+            <img
+              src="../Assests/home-da.webp"
+              alt="Direct Admissions Illustration"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Find -->
+    <section class="why-niche">
+      <div class="why-niche__container">
+        <!-- Header -->
+        <div class="why-niche__header">
+          <div class="why-niche__kicker">Find Your Niche</div>
+
+          <h2 class="why-niche__title">
+            Your search is unique.<br />
+            Just like you.
+          </h2>
+
+          <!-- Squiggle -->
+          <div class="why-niche__squiggle">
+            <svg viewBox="0 0 186 17" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M184.68 8.95C169.95 1.68 152.06 1.68 137.32 8.95C124.03 15.51 107.9 15.51 94.61 8.95C79.88 1.68 61.99 1.68 47.25 8.95C33.96 15.51 17.83 15.51 4.54 8.95L1 7.43"
+              />
+            </svg>
+          </div>
+
+          <p class="why-niche__intro">
+            We give you all of the data, reviews, and insights in one place to
+            make your search as easy as possible.
+          </p>
+        </div>
+
+        <!-- Reasons -->
+        <ul class="why-niche__reasons">
+          <li class="why-niche__reason">
+            <img src="../Assests/why-icon-1.svg" alt="" />
+            <h3>No Heavy Lifting</h3>
+            <p>We analyze the data so you don't have to.</p>
+          </li>
+
+          <li class="why-niche__reason">
+            <img src="../Assests/why-icon-2.svg" alt="" />
+            <h3>The Good, The Bad, &amp; The Honest</h3>
+            <p>
+              Our user reviews let you hear directly from families and students
+              to give you an honest and holistic view.
+            </p>
+          </li>
+
+          <li class="why-niche__reason">
+            <img src="../Assests/why-icon-3.svg" alt="" />
+            <h3>Like A Glove</h3>
+            <p>
+              We personalize your search based on what's most important to you.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="testimonial">
+      <!-- WHITE CURVE -->
+      <div class="testimonial__curve">
+        <div class="testimonial__curve-inner">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1512 3578.12">
+            <path
+              d="M1512,556.42s-38-103-214-151.21C1135.43,360.67,1019.11,430,873,371c-141.22-57-70.34-103.33-199.7-163.65-155.48-72.5-326.65,9.32-412.23-72.5C146.07,25,0,.23,0,.23V3578.35H1512Z"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div class="testimonial__content">
+        <div class="testimonial__grid">
+          <!-- LEFT -->
+          <div class="testimonial__left">
+            <div class="testimonial__kicker">REAL NICHE STORIES</div>
+
+            <h2 class="testimonial__title">
+              Niche has helped millions of students and families find their fit.
+            </h2>
+
+            <div class="testimonial__quotes">
+              <div class="testimonial__quote active">
+                <p>
+                  During my college search, I was having a difficult time
+                  narrowing down what I wanted in a school, so I used Niche to
+                  help.
+                </p>
+                <span class="testimonial__author">ABBY D.</span>
+              </div>
+
+              <div class="testimonial__quote">
+                <p>
+                  I am so grateful for Niche and their resources. Finding the
+                  right programs for my little ones has been invaluable.
+                </p>
+                <span class="testimonial__author">DAYNA M.</span>
+              </div>
+
+              <div class="testimonial__quote">
+                <p>
+                  Niche helped me explore different schools and see breakdowns
+                  on many aspects of their programs. I found my perfect fit!
+                </p>
+                <span class="testimonial__author">CLAY N.</span>
+              </div>
+            </div>
+
+            <div class="testimonial__dots">
+              <button class="dot active" data-index="0"></button>
+              <button class="dot" data-index="1"></button>
+              <button class="dot" data-index="2"></button>
+            </div>
+          </div>
+
+          <!-- RIGHT -->
+          <div class="testimonial__right">
+            <div class="testimonial__images">
+              <div class="testimonial__image active">
+                <img src="../Assests/abby-2.webp" alt="Abby" />
+              </div>
+              <div class="testimonial__image">
+                <img src="../Assests/dayna-1.webp" alt="Dayna" />
+              </div>
+              <div class="testimonial__image">
+                <img src="../Assests/clay-1.webp" alt="Clay" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- track -->
+    <section class="stay-track">
+      <!-- GREEN CURVE -->
+      <div class="stay-track__curve">
+        <div class="stay-track__curve-inner">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1512 3578.12"
+            preserveAspectRatio="xMidYMin slice"
+          >
+            <path
+              d="M1512,556.42s-38-103-214-151.21C1135.43,360.67,1019.11,430,873,371c-141.22-57-70.34-103.33-199.7-163.65-155.48-72.5-326.65,9.32-412.23-72.5C146.07,25,0,.23,0,.23V3578.35H1512Z"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <!-- CONTENT -->
+      <div class="stay-track__content">
+        <div class="stay-track__grid">
+          <!-- LEFT -->
+          <!-- LEFT : IMAGE -->
+          <div class="stay-track__visual">
+            <img
+              src="../Assests/track.png"
+              alt="School search organization illustration"
+              class="stay-track__image"
+            />
+          </div>
+
+          <!-- RIGHT -->
+          <div class="stay-track__right">
+            <div class="stay-track__kicker">STAY ON TRACK</div>
+
+            <h2 class="stay-track__title">
+              Tools to organize your school search.
+            </h2>
+
+            <div class="stay-track__squiggle">
+              <svg viewBox="0 0 186 17" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M184.68 8.95C169.95 1.68 152.06 1.68 137.32 8.95C124.03 15.51 107.9 15.51 94.61 8.95C79.88 1.68 61.99 1.68 47.25 8.95C33.96 15.51 17.83 15.51 4.54 8.95L1 7.43"
+                  fill="none"
+                  stroke="#ffffff"
+                  stroke-width="3"
+                />
+              </svg>
+            </div>
+
+            <p class="stay-track__text">
+              We'll help you build your list, track your progress, and get new
+              recommendations as your search narrows.
+            </p>
+
+            <a href="#" class="stay-track__link">Start Exploring</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Choose school -->
+    <section class="choose-school">
+      <!-- FULL WIDTH BACKGROUND SPLIT -->
+      <div class="choose-school__bg">
+        <div class="choose-school__bg-left"></div>
+        <div class="choose-school__bg-right"></div>
+      </div>
+
+      <!-- FLOATING BADGE -->
+      <div class="choose-school__badge">
+        <img
+          src="../Assests/stamp-everything.svg"
+          alt="Everything you need to know"
+        />
+      </div>
+
+      <!-- CONTENT -->
+      <div class="choose-school__content">
+        <div class="choose-school__grid">
+          <!-- LEFT -->
+          <div class="choose-school__left">
+            <div class="choose-school__kicker">CHOOSE YOUR SCHOOL</div>
+
+            <h2 class="choose-school__title">
+              Everything you need to make your decision.
+            </h2>
+
+            <div class="choose-school__squiggle">
+              <svg viewBox="0 0 186 17" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M184.68 8.95C169.95 1.68 152.06 1.68 137.32 8.95C124.03 15.51 107.9 15.51 94.61 8.95C79.88 1.68 61.99 1.68 47.25 8.95C33.96 15.51 17.83 15.51 4.54 8.95L1 7.43"
+                  fill="none"
+                  stroke="#2f7d3c"
+                  stroke-width="5"
+                />
+              </svg>
+            </div>
+
+            <p class="choose-school__text">
+              With the information you care about on every school in America, we
+              make it easy for you to compare schools and colleges to make your
+              decision.
+            </p>
+
+            <div class="choose-school__links">
+              <a href="#">Compare K-12 Schools</a>
+              <a href="#">Compare Colleges</a>
+            </div>
+          </div>
+
+          <!-- RIGHT (VISUAL) -->
+          <div class="choose-school__right">
+            <div class="choose-school__cards">
+              <img src="../Assests/choose.png" alt="UCLA card" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ranking -->
+
+    <section class="home-rankings">
+      <!-- TOP WAVE -->
+      <div class="home-wavy-edge home-wavy-edge--rankings">
+        <div class="home-wavy-edge__inner">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 45">
+            <path
+              d="M2000,17.26a2.6,2.6,0,0,1-.4.49C1970.2,16.56,1970.41,5,1941,5s-29.42,12.75-58.84,12.75S1852.73,5,1823.31,5s-29.42,12.75-58.83,12.75S1735.06,5,1705.64,5s-29.41,12.75-58.83,12.75S1617.39,5,1588,5s-29.41,12.75-58.83,12.75S1499.72,5,1470.3,5s-29.41,12.75-58.83,12.75S1382.05,5,1352.64,5s-29.42,12.75-58.83,12.75S1264.39,5,1235,5s-29.42,12.75-58.83,12.75S1146.73,5,1117.32,5s-29.42,12.75-58.83,12.75S1029.07,5,999.66,5s-29.42,12.75-58.84,12.75S911.41,5,882,5s-29.41,12.75-58.83,12.75S793.74,5,764.33,5,734.91,17.75,705.5,17.75,676.08,5,646.67,5s-29.42,12.75-58.84,12.75S558.42,5,529,5s-29.41,12.75-58.83,12.75S440.76,5,411.34,5s-29.41,12.75-58.83,12.75S323.1,5,293.68,5s-29.42,12.75-58.83,12.75S205.43,5,176,5,146.6,17.75,117.19,17.75,87.77,5,58.36,5C29.11,5,28.93,17.61,0,17.74V50H2000Z"
+              transform="translate(0 -5)"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <!-- CONTENT -->
+      <div class="home-rankings__container">
+        <div class="home-rankings__kicker">2026 RANKINGS</div>
+
+        <h2 class="home-rankings__title">
+          Browse schools &amp; colleges by “best of” lists.
+        </h2>
+
+        <div class="home-rankings__squiggle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 186 17"
+            fill="none"
+          >
+            <path
+              d="M184.68 8.95C169.95 1.68 152.06 1.68 137.32 8.95
+             C124.03 15.51 107.9 15.51 94.61 8.95
+             C79.88 1.68 61.99 1.68 47.25 8.95
+             C33.96 15.51 17.83 15.51 4.54 8.95L1 7.43"
+            />
+          </svg>
+        </div>
+
+        <p class="home-rankings__text">
+          We combine the reviews and the data to put together these
+          comprehensive lists to get you started.
+        </p>
+
+        <ul class="home-rankings__grid">
+          <li class="home-rankings__item">
+            <a href="#" class="home-rankings__link">
+              <img
+                src="../Assests/colleges-salt-badge.svg"
+                alt="Best Colleges"
+              />
+              <span>View Best Colleges</span>
+            </a>
+          </li>
+
+          <li class="home-rankings__item">
+            <a href="#" class="home-rankings__link">
+              <img src="../Assests/k12-salt-badge.svg" alt="Best Districts" />
+              <span>View Best K-12 Schools</span>
+            </a>
+          </li>
+
+          <li class="home-rankings__item">
+            <a href="#" class="home-rankings__link">
+              <img src="../Assests/k12-salt-badge.svg" alt="Best Districts" />
+              <span>View Best Districts</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Partner -->
+    <section class="partners">
+      <!-- TOP WAVE -->
+      <div class="home-wavy-edge home-wavy-edge--rankings">
+        <div class="home-wavy-edge__inner">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 45">
+            <path
+              d="M2000,17.26a2.6,2.6,0,0,1-.4.49C1970.2,16.56,1970.41,5,1941,5s-29.42,12.75-58.84,12.75S1852.73,5,1823.31,5s-29.42,12.75-58.83,12.75S1735.06,5,1705.64,5s-29.41,12.75-58.83,12.75S1617.39,5,1588,5s-29.41,12.75-58.83,12.75S1499.72,5,1470.3,5s-29.41,12.75-58.83,12.75S1382.05,5,1352.64,5s-29.42,12.75-58.83,12.75S1264.39,5,1235,5s-29.42,12.75-58.83,12.75S1146.73,5,1117.32,5s-29.42,12.75-58.83,12.75S1029.07,5,999.66,5s-29.42,12.75-58.84,12.75S911.41,5,882,5s-29.41,12.75-58.83,12.75S793.74,5,764.33,5,734.91,17.75,705.5,17.75,676.08,5,646.67,5s-29.42,12.75-58.84,12.75S558.42,5,529,5s-29.41,12.75-58.83,12.75S440.76,5,411.34,5s-29.41,12.75-58.83,12.75S323.1,5,293.68,5s-29.42,12.75-58.83,12.75S205.43,5,176,5,146.6,17.75,117.19,17.75,87.77,5,58.36,5C29.11,5,28.93,17.61,0,17.74V50H2000Z"
+              transform="translate(0 -5)"
+              fill="#f4ece7"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <!-- MAIN CONTENT -->
+      <div class="partners__content">
+        <div class="partners__grid">
+          <!-- LEFT -->
+          <div class="partners__copy">
+            <span class="partners__kicker">PARTNER WITH NICHE</span>
+
+            <h2 class="partners__title">For schools<br />and colleges</h2>
+
+            <div class="choose-school__squiggle">
+              <svg viewBox="0 0 186 17" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M184.68 8.95C169.95 1.68 152.06 1.68 137.32 8.95C124.03 15.51 107.9 15.51 94.61 8.95C79.88 1.68 61.99 1.68 47.25 8.95C33.96 15.51 17.83 15.51 4.54 8.95L1 7.43"
+                  fill="none"
+                  stroke="#2f7d3c"
+                  stroke-width="5"
+                />
+              </svg>
+            </div>
+
+            <p class="partners__text">
+              Are you a college or K-12 school representative? Learn more about
+              how you can partner with Niche to connect with students and
+              families throughout the school search process.
+            </p>
+
+            <a href="#" class="partners__claim">Claim Your School</a>
+
+            <button class="partners__btn">Learn More</button>
+          </div>
+
+          <!-- RIGHT -->
+          <div class="partners__visual">
+            <img src="../Assests/partner-dartmouth.webp" alt="Partner School" />
+          </div>
+        </div>
+
+        <!-- LOGOS -->
+        <div class="partners__logos-wrap">
+          <h3 class="partners__logos-title">
+            Over 1,700 schools partner with Niche
+          </h3>
+
+          <ul class="partners__logos">
+            <li>
+              <img
+                src="../Assests/logo-phillips-andover.png"
+                alt="Phillips Andover"
+              />
+            </li>
+            <li>
+              <img src="../Assests/logo-oregon.png" alt="Phillips Andover" />
+            </li>
+            <li>
+              <img
+                src="../Assests/logo-wash-jeff.png"
+                alt="Washington & Jefferson"
+              />
+            </li>
+            <li>
+              <img
+                src="../Assests/logo-marquette.png"
+                alt="Marquette University"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Start last section -->
+
+    <section class="home-started">
+      <!-- WAVY TOP -->
+      <div class="home-wavy-edge home-wavy-edge--rankings">
+        <div class="home-wavy-edge__inner">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 45">
+            <path
+              d="M2000,17.26a2.6,2.6,0,0,1-.4.49C1970.2,16.56,1970.41,5,1941,5s-29.42,12.75-58.84,12.75S1852.73,5,1823.31,5s-29.42,12.75-58.83,12.75S1735.06,5,1705.64,5s-29.41,12.75-58.83,12.75S1617.39,5,1588,5s-29.41,12.75-58.83,12.75S1499.72,5,1470.3,5s-29.41,12.75-58.83,12.75S1382.05,5,1352.64,5s-29.42,12.75-58.83,12.75S1264.39,5,1235,5s-29.42,12.75-58.83,12.75S1146.73,5,1117.32,5s-29.42,12.75-58.83,12.75S1029.07,5,999.66,5s-29.42,12.75-58.84,12.75S911.41,5,882,5s-29.41,12.75-58.83,12.75S793.74,5,764.33,5,734.91,17.75,705.5,17.75,676.08,5,646.67,5s-29.42,12.75-58.84,12.75S558.42,5,529,5s-29.41,12.75-58.83,12.75S440.76,5,411.34,5s-29.41,12.75-58.83,12.75S323.1,5,293.68,5s-29.42,12.75-58.83,12.75S205.43,5,176,5,146.6,17.75,117.19,17.75,87.77,5,58.36,5C29.11,5,28.93,17.61,0,17.74V50H2000Z"
+              transform="translate(0 -5)"
+              fill="#d0e0ec"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <!-- CONTENT -->
+      <div class="home-started__container">
+        <div class="home-started__grid">
+          <!-- LEFT : ILLUSTRATION -->
+          <div class="home-started__visual">
+            <img
+              src="../Assests/start-student-with-dog.webp"
+              alt="Student and dog illustration"
+              loading="lazy"
+            />
+          </div>
+
+          <!-- RIGHT : CONTENT -->
+          <div class="home-started__content">
+            <h2 class="home-started__title">Not sure where to start?</h2>
+
+            <div class="home-started__squiggle">
+              <svg viewBox="0 0 186 17" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M184.68 8.95C169.95 1.68 152.06 1.68 137.32 8.95
+              C124.03 15.51 107.9 15.51 94.61 8.95
+              C79.88 1.68 61.99 1.68 47.25 8.95
+              C33.96 15.51 17.83 15.51 4.54 8.95L1 7.43"
+                  fill="none"
+                  stroke="#102f25"
+                  stroke-width="4"
+                />
+              </svg>
+            </div>
+
+            <p class="home-started__text">
+              Tell us what matters most to you and we’ll create a custom list of
+              schools tailored to fit your needs.
+            </p>
+
+            <div class="home-started__ctas">
+              <a href="#" class="home-started__btn">Take our College Quiz</a>
+              <a href="#" class="home-started__btn"
+                >Find K-12 Schools Near You</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+    <footer
+      class="site-footer"
+      role="contentinfo"
+      aria-labelledby="footer-heading"
+    >
+      <div class="site-footer__inner container">
+        <!-- Breadcrumb inside footer -->
+        <nav class="footer-breadcrumb" aria-label="Breadcrumb">
+          <a href="#" class="breadcrumb__home">Home</a>
+          <span class="breadcrumb__sep">›</span>
+          <span class="breadcrumb__current">2026 Best Schools in America</span>
+        </nav>
+
+        <!-- ============================
+         FOOTER GRID STARTS HERE
+         ============================ -->
+        <div class="site-footer__cols">
+          <!-- ★ NEW CORRECT POSITION ★
+           TOP DIVIDER is NOW INSIDE the grid,
+           before left + right columns -->
+          <div class="footer-top-divider grid-span" aria-hidden="true">
+            <span class="left-line"></span>
+
+            <span class="footer-logo-holder">
+              <img
+                src="../Assests/footer-images/footer-logo.png"
+                alt="Niche logo"
+              />
+            </span>
+
+            <span class="right-line"></span>
+          </div>
+
+          <!-- LEFT COLUMN -->
+          <aside
+            class="site-footer__left"
+            aria-labelledby="footer-left-heading"
+          >
+            <nav class="footer-nav-vertical" aria-label="Footer main links">
+              <ul class="footer-nav-list">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Niche For Schools</a></li>
+                <li><a href="#">Niche For Colleges</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">College Guidance</a></li>
+                <li><a href="#">Resource Center</a></li>
+                <li><a href="#">True Cost</a></li>
+                <li><a href="#">Contact Niche</a></li>
+                <li><a href="#">Data</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Partnerships</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Do Not Sell My Personal Information</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">User Agreement</a></li>
+                <li><a href="#">Web Accessibility</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+                <li><a href="#">Sitemap</a></li>
+              </ul>
+            </nav>
+
+            <div class="footer-social" aria-label="Social links">
+              <a class="social" href="#" aria-label="Instagram">
+                <img src="../Assests/footer-images/instagram.svg" alt="" />
+              </a>
+              <a class="social" href="#" aria-label="Facebook">
+                <img src="../Assests/footer-images/facebook.svg" alt="" />
+              </a>
+              <a class="social" href="#" aria-label="X">
+                <img src="../Assests/footer-images/X-logo.svg" alt="" />
+              </a>
+              <a class="social" href="#" aria-label="TikTok">
+                <img src="../Assests/footer-images/tiktok.svg" alt="" />
+              </a>
+              <a class="social" href="#" aria-label="YouTube">
+                <img src="../Assests/footer-images/youtube.svg" alt="" />
+              </a>
+            </div>
+
+            <div class="footer-copyright">©2025 Niche.com Inc.</div>
+          </aside>
+
+          <!-- RIGHT COLUMN -->
+          <div class="site-footer__right" aria-labelledby="footer-heading">
+            <!-- Tagline -->
+            <p id="footer-heading" class="footer__tagline">
+              Discover the schools and neighborhoods that are right for you.
+            </p>
+
+            <!-- Category Navigation -->
+            <nav class="footer-categories" aria-label="Top categories">
+              <a class="cat" href="#">K-12</a>
+              <a class="cat" href="#">COLLEGES</a>
+              <a class="cat" href="#">GRADUATE SCHOOLS</a>
+              <a class="cat" href="#">PLACES TO LIVE</a>
+            </nav>
+
+            <hr class="footer-divider" aria-hidden="true" />
+
+            <p class="footer-claim">
+              Do you work for a school or college?
+              <a href="#">Claim Your School</a>
+            </p>
+
+            <hr class="footer-divider" aria-hidden="true" />
+
+            <!-- Three Columns of Links -->
+            <div class="footer-links-columns" aria-label="Useful links">
+              <div class="links-wrap">
+                <div class="links-col" aria-labelledby="col-1">
+                  <h4 id="col-1">School Districts</h4>
+                  <ul>
+                    <li><a href="#">Best School Districts in America</a></li>
+                    <li><a href="#">Best School Districts in California</a></li>
+                    <li><a href="#">Best School Districts in Georgia</a></li>
+                    <li><a href="#">Best School Districts in Ohio</a></li>
+                    <li>
+                      <a href="#">Best School Districts in Massachusetts</a>
+                    </li>
+                    <li><a href="#">Best School Districts in Michigan</a></li>
+                    <li><a href="#">Best School Districts in Minnesota</a></li>
+                    <li><a href="#">Best School Districts in New Jersey</a></li>
+                    <li><a href="#">Best School Districts in New York</a></li>
+                    <li>
+                      <a href="#">Best School Districts in North Carolina</a>
+                    </li>
+                    <li>
+                      <a href="#">Best School Districts in Pennsylvania</a>
+                    </li>
+                    <li><a href="#">Best School Districts in Texas</a></li>
+                    <li><a href="#">Best School Districts in Virginia</a></li>
+                    <li><a href="#">Best School Districts in Washington</a></li>
+                    <li><a href="#">Best School Districts in Wisconsin</a></li>
+                  </ul>
+                </div>
+
+                <div class="links-col" aria-labelledby="col-2">
+                  <h4 id="col-2">Public High Schools</h4>
+                  <ul>
+                    <li><a href="#">Best Public High Schools</a></li>
+                    <li><a href="#">Best Charter High Schools</a></li>
+                    <li><a href="#">Best Magnet High Schools</a></li>
+                    <li><a href="#">Adlai E. Stevenson High School</a></li>
+                    <li><a href="#">Carmel High School</a></li>
+                    <li><a href="#">Cypress Bay High School</a></li>
+                    <li><a href="#">Granada Hills Charter High School</a></li>
+                    <li><a href="#">Lane Tech College Prep High School</a></li>
+                    <li><a href="#">Polytechnic High School</a></li>
+                    <li><a href="#">Poolesville High School</a></li>
+                    <li><a href="#">Saratoga High School</a></li>
+                    <li><a href="#">Seven Lakes High School</a></li>
+                    <li><a href="#">Skyline High School</a></li>
+                    <li><a href="#">Stuyvesant High School</a></li>
+                    <li><a href="#">Westlake High School</a></li>
+                  </ul>
+                </div>
+
+                <div class="links-col" aria-labelledby="col-3">
+                  <h4 id="col-3">Private High Schools</h4>
+                  <ul>
+                    <li><a href="#">Best Private High Schools</a></li>
+                    <li><a href="#">Best Catholic High Schools</a></li>
+                    <li><a href="#">Dalton School</a></li>
+                    <li><a href="#">Germantown Friends School</a></li>
+                    <li><a href="#">Horace Mann School</a></li>
+                    <li><a href="#">Menlo School</a></li>
+                    <li><a href="#">Milton Academy</a></li>
+                    <li><a href="#">Phillips Exeter Academy</a></li>
+                    <li><a href="#">Ransom Everglades School</a></li>
+                    <li><a href="#">Sidwell Friends</a></li>
+                    <li><a href="#">The Harker School</a></li>
+                    <li><a href="#">The Hotchkiss School</a></li>
+                    <li><a href="#">The Kinkaid School</a></li>
+                    <li><a href="#">The Latin School of Chicago</a></li>
+                    <li><a href="#">University of Chicago Lab School</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Divider before App Row -->
+            <hr
+              class="footer-divider footer-divider--apps"
+              aria-hidden="true"
+            />
+
+            <!-- App Store & Play Store Row -->
+            <div class="footer-approw" aria-label="App links">
+              <p class="approw__text">
+                Learn more about our <a href="#">College Search App</a>
+              </p>
+
+              <div class="approw__badges">
+                <a class="badge" href="#"
+                  ><img
+                    src="../Assests/footer-images/Download_on_the_App_Store_Badge.svg"
+                    alt="Download on the App Store"
+                /></a>
+                <a class="badge" href="#"
+                  ><img
+                    src="../Assests/footer-images/Get_it_on_Google_play.png"
+                    alt="Get it on Google Play"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <!-- END RIGHT COLUMN -->
+        </div>
+        <!-- END site-footer__cols -->
+      </div>
+      <!-- END INNER -->
+    </footer>
+
+
+
+     <script src="../javascript/home.js" defer></script>
+    <script src="../javascript/header.js" defer></script>
+    <script src="../javascript/login.js" defer></script>
+  </body>
+</html>

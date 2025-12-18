@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/search.css" />
+     <link rel="stylesheet" href="../css/search-right-main.css" />
+     <link rel="stylesheet" href="../css/search-aside.css" />
+   
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+
+
+<section class="ranking-header">
+  <!-- =====================
+       DESKTOP VERSION
+  ====================== -->
+  <div class="ranking-header__desktop">
+    <div class="ranking-header__container">
+      <div class="ranking-header__grid">
+        <!-- BADGE -->
+        <div class="ranking-header__badge">
+          <img
+            src="..//Assests/search/k12-salt-badge.svg"
+            alt="2026 Niche Best Schools Badge"
+          />
+        </div>
+
+        <!-- CONTENT -->
+        <div class="ranking-header__content">
+          <h1 class="ranking-header__title">
+            2026 Best Schools <span>in&nbsp;America</span>
+          </h1>
+
+          <div class="ranking-header__description">
+            <p>
+              <span>
+                Explore the best schools in your area based on rigorous analysis
+                of key statistics and millions of reviews from students and
+                parents using data from the U.S. Department of Education.
+              </span>
+              <a href="#">
+                Read more on how this ranking was calculated.
+              </a>
+            </p>
+
+            <p>
+              <a href="#">Where Niche Grades come from</a>
+              and
+              <a href="#">how Niche calculates rankings</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =====================
+       MOBILE VERSION
+  ====================== -->
+  <div class="ranking-header__mobile">
+    <div class="ranking-header__container">
+      <div class="ranking-header__stack">
+        <h1 class="ranking-header__title">
+          2026 Best Schools <span>in&nbsp;America</span>
+        </h1>
+
+        <div class="ranking-header__badge">
+          <img
+            src="..//Assests/search/k12-salt-badge.svg"
+            alt="2026 Niche Best Schools Badge"
+          />
+        </div>
+
+        <div class="ranking-header__description">
+          <p>
+            <span>
+              Explore the best schools in your area based on rigorous analysis
+              of key statistics and millions of reviews from students and
+              parents using data from the U.S. Department of Education.
+            </span>
+            <a href="#">
+              Read more on how this ranking was calculated.
+            </a>
+          </p>
+
+          <p>
+            <a href="#">Where Niche Grades come from</a>
+            and
+            <a href="#">how Niche calculates rankings</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- tabs -->
+ <nav aria-label="search-topic-explorer">
+  <section class="search-topics-explorer" id="topicsExplorer">
+
+    <!-- TOP RAIL -->
+    <div class="search-topics-explorer__suggested-topics-wrap">
+
+      <!-- CURRENT -->
+      <span
+        class="search-topics-explorer__current-topic"
+        aria-label="Best schools, current"
+      >
+        Best schools
+      </span>
+
+      <!-- INLINE TOPICS -->
+      <ul class="search-topics-explorer__suggested-topics">
+        <li class="show-mobile-only"><a href="#">Most diverse</a></li>
+        <li><a href="#">Best teachers</a></li>
+        <li><a href="#">College prep</a></li>
+        <li class="hide-tablet"><a href="#">Largest</a></li>
+        <li class="hide-tablet"><a href="#">Niche standout schools</a></li>
+      </ul>
+
+      <!-- MORE -->
+      <button
+        class="search-topics-explorer__more"
+        aria-expanded="false"
+        id="topicsMoreBtn"
+      >
+        More
+        <svg class="arrow" width="18" height="18" viewBox="0 0 24 24">
+          <path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- DROPDOWN -->
+    <div class="search-topics-explorer-wrap" hidden>
+      <section class="search-topics-explorer__columns">
+
+        <div class="search-topics-explorer-column">
+          <ul>
+            <li><a href="#">Best schools</a></li>
+            <li><a href="#">Most diverse</a></li>
+            <li><a href="#">Best teachers</a></li>
+          </ul>
+        </div>
+
+        <div class="search-topics-explorer-column">
+          <ul>
+            <li><a href="#">College prep</a></li>
+            <li><a href="#">Largest</a></li>
+            <li><a href="#">Best for STEM</a></li>
+          </ul>
+        </div>
+
+        <div class="search-topics-explorer-column">
+          <ul>
+            <li><a href="#">Niche standout schools</a></li>
+            <li><a href="#">Best for the arts</a></li>
+          </ul>
+        </div>
+
+        <div class="search-topics-explorer-column">
+          <ul>
+            <li><a href="#">Best for athletes</a></li>
+            <li><a href="#">Best districts</a></li>
+          </ul>
+        </div>
+
+      </section>
+    </div>
+
+  </section>
+</nav>
+
+
+<!-- main two section -->
+
+<section class="search-layout">
+<nav class="search-controls-wrapper">
+
+  <!-- MOBILE ACTION BAR (ONLY MOBILE) -->
+  <div class="search-controls-mobile-actions">
+    <button class="btn btn-map">View on Map</button>
+    <button class="btn btn-filter" id="openFilters">Filter</button>
+  </div>
+
+  <!-- DESKTOP MAP BUTTON -->
+  <button class="btn btn-map desktop-only">View on Map</button>
+
+  <!-- FILTER SIDEBAR -->
+  <aside class="search-controls" aria-label="Filters">
+
+    <!-- SEARCH TYPE -->
+    <section class="filter-group">
+      <h3 class="filter-title">Search type</h3>
+      <label><input type="radio" name="searchType" checked /> Schools</label>
+      <label><input type="radio" name="searchType" /> Districts</label>
+    </section>
+
+    <!-- GRADE LEVEL -->
+    <section class="filter-group">
+     <div class="filter-header">
+  <h3 class="filter-title">Grade level</h3>
+  <button class="clear-filter" hidden>✕ Clear filter</button>
+</div>
+      <label><input type="checkbox" /> Pre-K</label>
+      <label><input type="checkbox" /> Elementary</label>
+      <label><input type="checkbox" /> Middle</label>
+      <label><input type="checkbox" /> High school</label>
+      <label><input type="checkbox" /> K–8 only</label>
+      <label><input type="checkbox" /> K–12 only</label>
+    </section>
+
+    <!-- HIGHEST GRADE -->
+    <section class="filter-group">
+      <h3 class="filter-title">Highest grade offered</h3>
+      <div class="search-control search-control--clearable">
+  <div class="custom-select" data-select>
+    <button class="custom-select__trigger" aria-expanded="false">
+      <span class="custom-select__value">Select a grade...</span>
+      <span class="custom-select__arrow">▾</span>
+    </button>
+
+    <ul class="custom-select__menu" role="listbox">
+      <li class="custom-select__option selected" data-value="">
+        Select a grade...
+        <span class="check">✔</span>
+      </li>
+      <li class="custom-select__option">Pre-K</li>
+      <li class="custom-select__option">Kindergarten</li>
+      <li class="custom-select__option">1</li>
+      <li class="custom-select__option">2</li>
+      <li class="custom-select__option">3</li>
+      <li class="custom-select__option">4</li>
+      <li class="custom-select__option">5</li>
+      <li class="custom-select__option">6</li>
+      <li class="custom-select__option">7</li>
+      <li class="custom-select__option">8</li>
+      <li class="custom-select__option">9</li>
+      <li class="custom-select__option">10</li>
+      <li class="custom-select__option">11</li>
+      <li class="custom-select__option">12</li>
+    </ul>
+  </div>
+</div>
+
+    </section>
+
+    <!-- SCHOOL TYPE -->
+    <section class="filter-group">
+      <h3 class="filter-title">School type</h3>
+      <label><input type="checkbox" /> Public</label>
+      <label class="indent"><input type="checkbox" /> Traditional</label>
+      <label class="indent"><input type="checkbox" /> Charter</label>
+      <label class="indent"><input type="checkbox" /> Magnet</label>
+      <label><input type="checkbox" /> Private</label>
+    </section>
+
+    <!-- RELIGION -->
+    <section class="filter-group">
+      <h3 class="filter-title">Religion</h3>
+      <label><input type="checkbox" /> Catholic</label>
+      <label><input type="checkbox" /> Christian</label>
+      <label><input type="checkbox" /> Jewish</label>
+      <label><input type="checkbox" /> Islamic</label>
+    </section>
+
+    <!-- BOARDING -->
+    <section class="filter-group">
+      <h3 class="filter-title">Boarding status</h3>
+      <label><input type="checkbox" /> Offers boarding</label>
+    </section>
+
+    <!-- COED STATUS -->
+    <section class="filter-group">
+      <h3 class="filter-title">Coed status</h3>
+      <div class="segmented-control">
+        <button class="segment active">Coed</button>
+        <button class="segment">All-girls</button>
+        <button class="segment">All-boys</button>
+      </div>
+    </section>
+
+    <!-- SPECIALTY -->
+    <section class="filter-group">
+      <h3 class="filter-title">Specialty</h3>
+      <label><input type="checkbox" /> Online</label>
+      <label><input type="checkbox" /> Special education</label>
+      <label><input type="checkbox" /> Montessori</label>
+      <label><input type="checkbox" /> Therapeutic</label>
+    </section>
+
+    <!-- TUITION -->
+   <section class="filter-group" data-range="tuition">
+  <div class="filter-header">
+    <h3 class="filter-title">Tuition <span class="info">?</span></h3>
+    <button class="clear-filter" hidden>✕ Clear filter</button>
+  </div>
+
+  <div class="range-label">$0 – $26,000</div>
+
+  <div class="range-wrap">
+    <input type="range" min="0" max="26000" step="1000" value="0" class="range-slider">
+    <span class="range-bubble">$0</span>
+  </div>
+</section>
+
+
+    <!-- ACADEMICS -->
+    <section class="filter-group">
+      <h3 class="filter-title">Academics</h3>
+      <label><input type="checkbox" /> AP program</label>
+      <label><input type="checkbox" /> IB program</label>
+      <label><input type="checkbox" /> Gifted/talented program</label>
+    </section>
+
+    <!-- STUDENT TEACHER RATIO -->
+    <section class="filter-group" data-range="ratio">
+  <div class="filter-header">
+    <h3 class="filter-title">Student-teacher ratio <span class="info">?</span></h3>
+    <button class="clear-filter" hidden>✕ Clear filter</button>
+  </div>
+
+  <div class="range-label">2:1 – 50:1</div>
+
+  <div class="range-wrap">
+    <input type="range" min="2" max="50" step="1" value="2" class="range-slider">
+    <span class="range-bubble">2:1</span>
+  </div>
+</section>
+
+    <!-- NICHE GRADES -->
+    <section class="filter-group">
+  <h3 class="filter-title">Niche Grades</h3>
+
+  <div class="grade-block" data-grade>
+    <div class="filter-header">
+      <span>Academics</span>
+      <button class="clear-filter" hidden>✕ Clear filter</button>
+    </div>
+    <div class="grade-pills">
+      <button>A</button><button>B</button><button>C</button><button>D</button>
+    </div>
+  </div>
+
+  <div class="grade-block" data-grade>
+    <div class="filter-header">
+      <span>Teachers</span>
+      <button class="clear-filter" hidden>✕ Clear filter</button>
+    </div>
+    <div class="grade-pills">
+      <button>A</button><button>B</button><button>C</button><button>D</button>
+    </div>
+  </div>
+  <div class="grade-block" data-grade>
+    <div class="filter-header">
+      <span>Diversity</span>
+      <button class="clear-filter" hidden>✕ Clear filter</button>
+    </div>
+    <div class="grade-pills">
+      <button>A</button><button>B</button><button>C</button><button>D</button>
+    </div>
+  </div>
+  <div class="grade-block" data-grade>
+    <div class="filter-header">
+      <span>Sports</span>
+      <button class="clear-filter" hidden>✕ Clear filter</button>
+    </div>
+    <div class="grade-pills">
+      <button>A</button><button>B</button><button>C</button><button>D</button>
+    </div>
+  </div>
+</section>
+
+
+    <!-- ORGANIZATION -->
+    <section class="filter-group">
+      <h3 class="filter-title">Organization</h3>
+      <select class="filter-select">
+        <option selected>Select one...</option>
+        <option>Public</option>
+        <option>Private</option>
+        <option>Charter</option>
+      </select>
+    </section>
+
+  </aside>
+
+  <!-- MOBILE FOOTER ACTIONS -->
+  <div class="search-controls-actions">
+    <button class="btn btn-cancel" id="closeFilters">Cancel</button>
+    <button class="btn btn-apply">Apply</button>
+  </div>
+
+</nav>
+<main class="search-results">
+
+  <!-- Results meta -->
+  <div class="search-results__meta">
+    1–25 of 127,065 results
+  </div>
+
+  <!-- Results list -->
+  <ul class="results-list">
+
+    <!-- Result item -->
+    <li class="results-list__item">
+  <article class="search-card search-card--with-image">
+
+    <!-- CLICKABLE CONTENT -->
+    <a href="#" class="search-card__link">
+
+      <!-- CONTENT -->
+      <div class="search-card__content">
+
+        <div class="search-card__rank">
+          #2 BEST PRIVATE HIGH SCHOOLS IN AMERICA
+        </div>
+
+        <h2 class="search-card__title">
+          Phillips Exeter Academy
+          <div class="search-result__claimed-indicator" data-testid="claimed-checkmark"></div>
+        </h2>
+
+        <div class="search-card__meta">
+          <span><svg class="ExpediteIcon-root" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#565656" font-size="0.875rem" height="1em" width="1em"><path d="M12,5.5c-2.1,0-3.9,1.7-3.9,3.8c0,2.1,1.7,3.8,3.9,3.8c2.1,0,3.9-1.7,3.9-3.8C15.9,7.2,14.1,5.5,12,5.5z M12,11.7
+        	c-1.4,0-2.5-1.1-2.5-2.5c0-1.4,1.1-2.5,2.5-2.5c1.4,0,2.5,1.1,2.5,2.5C14.5,10.6,13.4,11.7,12,11.7z"></path><path d="M17,2.5l-0.1-0.1c-2.7-2-7.2-1.9-9.9,0.1c-2.9,2.1-4.3,5.7-3.6,9c0.2,0.9,0.5,1.8,1,2.8c0.5,0.9,1.1,1.8,1.9,2.9l4.8,5.3
+        	c0.2,0.3,0.5,0.4,0.9,0.4h0c0.3,0,0.7-0.2,0.9-0.5c0,0,0,0,0,0l4.6-5.2c0.9-1.1,1.5-1.9,2.1-3c0.5-1,0.8-1.9,1-2.8
+        	C21.3,8.2,19.9,4.7,17,2.5L17,2.5z M19.2,11.2c-0.2,0.8-0.5,1.6-0.9,2.4c-0.6,1-1.1,1.7-1.9,2.7L12,21.5l-4.6-5.1
+        	c-0.7-0.9-1.3-1.8-1.7-2.6c-0.4-0.9-0.7-1.7-0.9-2.4c-0.6-2.8,0.6-5.8,3-7.6c1.2-0.9,2.7-1.3,4.2-1.3c1.5,0,3,0.4,4.1,1.2l0.1,0.1
+        	C18.6,5.5,19.8,8.4,19.2,11.2z"></path></svg> Exeter, NH</span>
+          <span>·</span>
+          <span>Private School</span>
+          <span>·</span>
+          <span>9–12</span>
+          <span>·</span>
+          <span class="stars">★★★★★</span>
+          <span class="reviews">390 reviews</span>
+        </div>
+
+        <p class="search-card__snippet">
+          <strong>Parent:</strong> The Harkness table at PhillipsExeterAcademy is truly remarkable.
+          Even students who feel uncertain at first quickly adapt to the Harkness, and this ofte…
+          <span class="read-more">Read 390 reviews</span>
+        </p>
+
+        <div class="search-card__facts">
+          <span class="grade-pill">A+</span>
+          <span>Overall Niche Grade</span>
+          <span>·</span>
+          <span>Students 1,096</span>
+          <span>·</span>
+          <span>Student-teacher ratio 5:1</span>
+        </div>
+
+      </div>
+
+      <!-- IMAGE -->
+      <div
+        class="search-card__image"
+        style="background-image:url('')">
+      </div>
+
+    </a>
+
+    <!-- FOOTER -->
+    <div class="search-card__footer">
+      <div class="footer-left">
+        <a href="#">View nearby homes</a>
+        <span class="divider">|</span>
+        <a href="#">Virtual tour</a>
+      </div>
+
+      <button class="add-to-list">
+        ♡ Add to List
+      </button>
+    </div>
+
+  </article>
+</li>
+
+
+<!-- result list card with img -->
+   <li class="results-list__item">
+  <article class="search-card search-card--with-image">
+
+    <!-- CLICKABLE CONTENT -->
+    <a href="#" class="search-card__link">
+
+      <!-- CONTENT -->
+      <div class="search-card__content">
+
+        <div class="search-card__rank">
+          #2 BEST PRIVATE HIGH SCHOOLS IN AMERICA
+        </div>
+
+        <h2 class="search-card__title">
+          Phillips Exeter Academy
+         <div class="search-result__claimed-indicator" data-testid="claimed-checkmark"></div>
+        </h2>
+
+        <div class="search-card__meta">
+            
+          <span><svg class="ExpediteIcon-root" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#565656" font-size="0.875rem" height="1em" width="1em"><path d="M12,5.5c-2.1,0-3.9,1.7-3.9,3.8c0,2.1,1.7,3.8,3.9,3.8c2.1,0,3.9-1.7,3.9-3.8C15.9,7.2,14.1,5.5,12,5.5z M12,11.7
+        	c-1.4,0-2.5-1.1-2.5-2.5c0-1.4,1.1-2.5,2.5-2.5c1.4,0,2.5,1.1,2.5,2.5C14.5,10.6,13.4,11.7,12,11.7z"></path><path d="M17,2.5l-0.1-0.1c-2.7-2-7.2-1.9-9.9,0.1c-2.9,2.1-4.3,5.7-3.6,9c0.2,0.9,0.5,1.8,1,2.8c0.5,0.9,1.1,1.8,1.9,2.9l4.8,5.3
+        	c0.2,0.3,0.5,0.4,0.9,0.4h0c0.3,0,0.7-0.2,0.9-0.5c0,0,0,0,0,0l4.6-5.2c0.9-1.1,1.5-1.9,2.1-3c0.5-1,0.8-1.9,1-2.8
+        	C21.3,8.2,19.9,4.7,17,2.5L17,2.5z M19.2,11.2c-0.2,0.8-0.5,1.6-0.9,2.4c-0.6,1-1.1,1.7-1.9,2.7L12,21.5l-4.6-5.1
+        	c-0.7-0.9-1.3-1.8-1.7-2.6c-0.4-0.9-0.7-1.7-0.9-2.4c-0.6-2.8,0.6-5.8,3-7.6c1.2-0.9,2.7-1.3,4.2-1.3c1.5,0,3,0.4,4.1,1.2l0.1,0.1
+        	C18.6,5.5,19.8,8.4,19.2,11.2z"></path></svg> Exeter, NH</span>
+          <span>·</span>
+          <span>Private School</span>
+          <span>·</span>
+          <span>9–12</span>
+          <span>·</span>
+          <span class="stars">★★★★★</span>
+          <span class="reviews">390 reviews</span>
+        </div>
+
+        <p class="search-card__snippet">
+          <strong>Parent:</strong> The Harkness table at PhillipsExeterAcademy is truly remarkable.
+          Even students who feel uncertain at first quickly adapt to the Harkness, and this ofte…
+          <span class="read-more">Read 390 reviews</span>
+        </p>
+
+        <div class="search-card__facts">
+          <span class="grade-pill">A+</span>
+          <span>Overall Niche Grade</span>
+          <span>·</span>
+          <span>Students 1,096</span>
+          <span>·</span>
+          <span>Student-teacher ratio 5:1</span>
+        </div>
+
+      </div>
+
+      <!-- IMAGE -->
+      <div
+        class="search-card__image"
+         style="background-image:url('../Assests/Filter_page/109fac9aac669da48478df398a7f5faf50b2ddc0.jpg')">
+      </div>
+
+    </a>
+
+    <!-- FOOTER -->
+    <div class="search-card__footer">
+      <div class="footer-left">
+        <a href="#">View nearby homes</a>
+        <span class="divider">|</span>
+        <a href="#">Virtual tour</a>
+      </div>
+
+      <button class="add-to-list">
+        ♡ Add to List
+      </button>
+    </div>
+
+  </article>
+</li>
+
+
+
+<!-- result list card with img -->
+   <li class="results-list__item">
+  <article class="search-card search-card--with-image">
+
+    <!-- CLICKABLE CONTENT -->
+    <a href="#" class="search-card__link">
+
+      <!-- CONTENT -->
+      <div class="search-card__content">
+
+        <div class="search-card__rank">
+          #1 BEST PRIVATE HIGH SCHOOLS IN AMERICA
+        </div>
+
+        <h2 class="search-card__title">
+          Phillips Exeter Academy
+          
+          <div class="search-result__claimed-indicator" data-testid="claimed-checkmark"></div>
+        </h2>
+
+        <div class="search-card__meta">
+          <span> <svg class="ExpediteIcon-root" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#565656" font-size="0.875rem" height="1em" width="1em"><path d="M12,5.5c-2.1,0-3.9,1.7-3.9,3.8c0,2.1,1.7,3.8,3.9,3.8c2.1,0,3.9-1.7,3.9-3.8C15.9,7.2,14.1,5.5,12,5.5z M12,11.7
+        	c-1.4,0-2.5-1.1-2.5-2.5c0-1.4,1.1-2.5,2.5-2.5c1.4,0,2.5,1.1,2.5,2.5C14.5,10.6,13.4,11.7,12,11.7z"></path><path d="M17,2.5l-0.1-0.1c-2.7-2-7.2-1.9-9.9,0.1c-2.9,2.1-4.3,5.7-3.6,9c0.2,0.9,0.5,1.8,1,2.8c0.5,0.9,1.1,1.8,1.9,2.9l4.8,5.3
+        	c0.2,0.3,0.5,0.4,0.9,0.4h0c0.3,0,0.7-0.2,0.9-0.5c0,0,0,0,0,0l4.6-5.2c0.9-1.1,1.5-1.9,2.1-3c0.5-1,0.8-1.9,1-2.8
+        	C21.3,8.2,19.9,4.7,17,2.5L17,2.5z M19.2,11.2c-0.2,0.8-0.5,1.6-0.9,2.4c-0.6,1-1.1,1.7-1.9,2.7L12,21.5l-4.6-5.1
+        	c-0.7-0.9-1.3-1.8-1.7-2.6c-0.4-0.9-0.7-1.7-0.9-2.4c-0.6-2.8,0.6-5.8,3-7.6c1.2-0.9,2.7-1.3,4.2-1.3c1.5,0,3,0.4,4.1,1.2l0.1,0.1
+        	C18.6,5.5,19.8,8.4,19.2,11.2z"></path></svg> Exeter, NH</span>
+          <span>·</span>
+          <span>Private School</span>
+          <span>·</span>
+          <span>9–12</span>
+          <span>·</span>
+          <span class="stars">★★★★★</span>
+          <span class="reviews">390 reviews</span>
+        </div>
+
+        <p class="search-card__snippet">
+          <strong>Parent:</strong> The Harkness table at PhillipsExeterAcademy is truly remarkable.
+          Even students who feel uncertain at first quickly adapt to the Harkness, and this ofte…
+          <span class="read-more">Read 390 reviews</span>
+        </p>
+
+        <div class="search-card__facts">
+          <span class="grade-pill">A+</span>
+          <span>Overall Niche Grade</span>
+          <span>·</span>
+          <span>Students 1,096</span>
+          <span>·</span>
+          <span>Student-teacher ratio 5:1</span>
+        </div>
+
+      </div>
+
+      <!-- IMAGE -->
+      <div
+        class="search-card__image"
+         style="background-image:url('../Assests/Filter_page/109fac9aac669da48478df398a7f5faf50b2ddc0.jpg')">
+      </div>
+
+    </a>
+
+    <!-- FOOTER -->
+    <div class="search-card__footer">
+      <div class="footer-left">
+        <a href="#">View nearby homes</a>
+        <span class="divider">|</span>
+        <a href="#">Virtual tour</a>
+      </div>
+
+      <button class="add-to-list">
+        ♡ Add to List
+      </button>
+    </div>
+
+  </article>
+</li>
+
+
+
+
+<!-- result list card with img -->
+   <li class="results-list__item">
+  <article class="search-card search-card--with-image">
+
+    <!-- CLICKABLE CONTENT -->
+    <a href="#" class="search-card__link">
+
+      <!-- CONTENT -->
+      <div class="search-card__content">
+
+        <div class="search-card__rank">
+          #2 BEST PRIVATE HIGH SCHOOLS IN AMERICA
+        </div>
+
+        <h2 class="search-card__title">
+          Phillips Exeter Academy
+         <div class="search-result__claimed-indicator" data-testid="claimed-checkmark"></div>
+        </h2>
+
+        <div class="search-card__meta">
+          <span><svg class="ExpediteIcon-root" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#565656" font-size="0.875rem" height="1em" width="1em"><path d="M12,5.5c-2.1,0-3.9,1.7-3.9,3.8c0,2.1,1.7,3.8,3.9,3.8c2.1,0,3.9-1.7,3.9-3.8C15.9,7.2,14.1,5.5,12,5.5z M12,11.7
+        	c-1.4,0-2.5-1.1-2.5-2.5c0-1.4,1.1-2.5,2.5-2.5c1.4,0,2.5,1.1,2.5,2.5C14.5,10.6,13.4,11.7,12,11.7z"></path><path d="M17,2.5l-0.1-0.1c-2.7-2-7.2-1.9-9.9,0.1c-2.9,2.1-4.3,5.7-3.6,9c0.2,0.9,0.5,1.8,1,2.8c0.5,0.9,1.1,1.8,1.9,2.9l4.8,5.3
+        	c0.2,0.3,0.5,0.4,0.9,0.4h0c0.3,0,0.7-0.2,0.9-0.5c0,0,0,0,0,0l4.6-5.2c0.9-1.1,1.5-1.9,2.1-3c0.5-1,0.8-1.9,1-2.8
+        	C21.3,8.2,19.9,4.7,17,2.5L17,2.5z M19.2,11.2c-0.2,0.8-0.5,1.6-0.9,2.4c-0.6,1-1.1,1.7-1.9,2.7L12,21.5l-4.6-5.1
+        	c-0.7-0.9-1.3-1.8-1.7-2.6c-0.4-0.9-0.7-1.7-0.9-2.4c-0.6-2.8,0.6-5.8,3-7.6c1.2-0.9,2.7-1.3,4.2-1.3c1.5,0,3,0.4,4.1,1.2l0.1,0.1
+        	C18.6,5.5,19.8,8.4,19.2,11.2z"></path></svg> Exeter, NH</span>
+          <span>·</span>
+          <span>Private School</span>
+          <span>·</span>
+          <span>9–12</span>
+          <span>·</span>
+          <span class="stars">★★★★★</span>
+          <span class="reviews">390 reviews</span>
+        </div>
+
+        <p class="search-card__snippet">
+          <strong>Parent:</strong> The Harkness table at PhillipsExeterAcademy is truly remarkable.
+          Even students who feel uncertain at first quickly adapt to the Harkness, and this ofte…
+          <span class="read-more">Read 390 reviews</span>
+        </p>
+
+        <div class="search-card__facts">
+          <span class="grade-pill">A+</span>
+          <span>Overall Niche Grade</span>
+          <span>·</span>
+          <span>Students 1,096</span>
+          <span>·</span>
+          <span>Student-teacher ratio 5:1</span>
+        </div>
+
+      </div>
+
+      <!-- IMAGE -->
+      <div
+        class="search-card__image"
+         style="background-image:url('../Assests/Filter_page/109fac9aac669da48478df398a7f5faf50b2ddc0.jpg')">
+      </div>
+
+    </a>
+
+    <!-- FOOTER -->
+    <div class="search-card__footer">
+      <div class="footer-left">
+        <a href="#">View nearby homes</a>
+        <span class="divider">|</span>
+        <a href="#">Virtual tour</a>
+      </div>
+
+      <button class="add-to-list">
+        ♡ Add to List
+      </button>
+    </div>
+
+  </article>
+</li>
+
+
+
+<!-- result list card with img -->
+   <li class="results-list__item">
+  <article class="search-card search-card--with-image">
+
+    <!-- CLICKABLE CONTENT -->
+    <a href="#" class="search-card__link">
+
+      <!-- CONTENT -->
+      <div class="search-card__content">
+
+        <div class="search-card__rank">
+          #2 BEST PRIVATE HIGH SCHOOLS IN AMERICA
+        </div>
+
+        <h2 class="search-card__title">
+          Phillips Exeter Academy
+          <div class="search-result__claimed-indicator" data-testid="claimed-checkmark"></div>
+        </h2>
+
+        <div class="search-card__meta">
+          <span><svg class="ExpediteIcon-root" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#565656" font-size="0.875rem" height="1em" width="1em"><path d="M12,5.5c-2.1,0-3.9,1.7-3.9,3.8c0,2.1,1.7,3.8,3.9,3.8c2.1,0,3.9-1.7,3.9-3.8C15.9,7.2,14.1,5.5,12,5.5z M12,11.7
+        	c-1.4,0-2.5-1.1-2.5-2.5c0-1.4,1.1-2.5,2.5-2.5c1.4,0,2.5,1.1,2.5,2.5C14.5,10.6,13.4,11.7,12,11.7z"></path><path d="M17,2.5l-0.1-0.1c-2.7-2-7.2-1.9-9.9,0.1c-2.9,2.1-4.3,5.7-3.6,9c0.2,0.9,0.5,1.8,1,2.8c0.5,0.9,1.1,1.8,1.9,2.9l4.8,5.3
+        	c0.2,0.3,0.5,0.4,0.9,0.4h0c0.3,0,0.7-0.2,0.9-0.5c0,0,0,0,0,0l4.6-5.2c0.9-1.1,1.5-1.9,2.1-3c0.5-1,0.8-1.9,1-2.8
+        	C21.3,8.2,19.9,4.7,17,2.5L17,2.5z M19.2,11.2c-0.2,0.8-0.5,1.6-0.9,2.4c-0.6,1-1.1,1.7-1.9,2.7L12,21.5l-4.6-5.1
+        	c-0.7-0.9-1.3-1.8-1.7-2.6c-0.4-0.9-0.7-1.7-0.9-2.4c-0.6-2.8,0.6-5.8,3-7.6c1.2-0.9,2.7-1.3,4.2-1.3c1.5,0,3,0.4,4.1,1.2l0.1,0.1
+        	C18.6,5.5,19.8,8.4,19.2,11.2z"></path></svg> Exeter, NH</span>
+          <span>·</span>
+          <span>Private School</span>
+          <span>·</span>
+          <span>9–12</span>
+          <span>·</span>
+          <span class="stars">★★★★★</span>
+          <span class="reviews">390 reviews</span>
+        </div>
+
+        <p class="search-card__snippet">
+          <strong>Parent:</strong> The Harkness table at PhillipsExeterAcademy is truly remarkable.
+          Even students who feel uncertain at first quickly adapt to the Harkness, and this ofte…
+          <span class="read-more">Read 390 reviews</span>
+        </p>
+
+        <div class="search-card__facts">
+          <span class="grade-pill">A+</span>
+          <span>Overall Niche Grade</span>
+          <span>·</span>
+          <span>Students 1,096</span>
+          <span>·</span>
+          <span>Student-teacher ratio 5:1</span>
+        </div>
+
+      </div>
+
+      <!-- IMAGE -->
+      <div
+        class="search-card__image"
+        style="background-image:url('../Assests/Filter_page/109fac9aac669da48478df398a7f5faf50b2ddc0.jpg')">
+      </div>
+
+    </a>
+
+    <!-- FOOTER -->
+    <div class="search-card__footer">
+      <div class="footer-left">
+        <a href="#">View nearby homes</a>
+        <span class="divider">|</span>
+        <a href="#">Virtual tour</a>
+      </div>
+
+      <button class="add-to-list">
+        ♡ Add to List
+      </button>
+    </div>
+
+  </article>
+</li>
+
+
+
+
+
+
+<!-- 3 school cards -->
+<li class="search-results__list__item">
+
+  <section class="tray-wrap" aria-label="Related lists">
+    <div class="tray">
+
+      <ul class="postcards">
+
+        <li class="postcards__item">
+          <a class="postcard" href="#">
+            <div class="postcard__image">
+              <div
+                class="postcard__image-bg"
+                style="background-image:url('/Assests/Filter_page/k12-public-schools_640.png')">
+              </div>
+            </div>
+            <div class="postcard__content">
+              <span>2026 Best Public High Schools</span>
+            </div>
+          </a>
+        </li>
+
+        <li class="postcards__item">
+          <a class="postcard" href="#">
+            <div class="postcard__image">
+              <div
+                class="postcard__image-bg"
+                style="background-image:url('/Assests/Filter_page/k12-private-schools_640.png')">
+              </div>
+            </div>
+            <div class="postcard__content">
+              <span>2026 Best Private High Schools</span>
+            </div>
+          </a>
+        </li>
+
+        <li class="postcards__item">
+          <a class="postcard" href="#">
+            <div class="postcard__image">
+              <div
+                class="postcard__image-bg"
+                style="background-image:url('/Assests/Filter_page/k12-school-districts_640.png')">
+              </div>
+            </div>
+            <div class="postcard__content">
+              <span>2026 Best School Districts</span>
+            </div>
+          </a>
+        </li>
+
+        <!-- mobile scroll buffer -->
+        <li class="postcards__buffer"></li>
+
+      </ul>
+    </div>
+  </section>
+
+</li>
+
+
+
+<!-- review school card -->
+<li class="search-results__list__item">
+  <div class="card illustrated-cta__card">
+    <a
+      class="illustrated-cta illustrated-cta--k12 search__cardCTA"
+      href="#"
+      aria-label="Review your school"
+    >
+      <h2 class="illustrated-cta__text">
+        <span class="illustrated-cta__text-prompt">
+          Review your school
+        </span>
+      </h2>
+
+      <div class="illustrated-cta__art" aria-hidden="true">
+        <div class="illustrated-cta__art-img"></div>
+      </div>
+    </a>
+  </div>
+</li>
+  </ul>
+
+
+
+
+  <!-- 3 school cards -->
+<li class="search-results__list__item">
+
+  <section class="tray-wrap" aria-label="Related lists">
+    <div class="tray">
+
+      <ul class="postcards">
+
+        <li class="postcards__item">
+          <a class="postcard" href="#">
+            <div class="postcard__image">
+              <div
+                class="postcard__image-bg"
+                style="background-image:url('/Assests/Filter_page/k12-public-schools_640.png')">
+              </div>
+            </div>
+            <div class="postcard__content">
+              <span>2026 Best Public Elementary Schools</span>
+            </div>
+          </a>
+        </li>
+
+        <li class="postcards__item">
+          <a class="postcard" href="#">
+            <div class="postcard__image">
+              <div
+                class="postcard__image-bg"
+                style="background-image:url('/Assests/Filter_page/k12-public-schools_640.png')">
+              </div>
+            </div>
+            <div class="postcard__content">
+              <span>2026 Best Public Middle Schools</span>
+            </div>
+          </a>
+        </li>
+
+        <li class="postcards__item">
+          <a class="postcard" href="#">
+            <div class="postcard__image">
+              <div
+                class="postcard__image-bg"
+                style="background-image:url('/Assests/Filter_page/k12-teachers_640.png')">
+              </div>
+            </div>
+            <div class="postcard__content">
+              <span>2026 High Schools with the Best Teachers</span>
+            </div>
+          </a>
+        </li>
+
+        <!-- mobile scroll buffer -->
+        <li class="postcards__buffer"></li>
+
+      </ul>
+    </div>
+  </section>
+
+</li>
+<!-- find school link -->
+  <a
+  href="https://www.niche.com/k12/schools-near-you/"
+  class="informational-cta"
+  aria-labelledby="informational-cta-title"
+>
+  <div class="informational-cta__container">
+
+    <!-- IMAGE -->
+    <div class="informational-cta__image" aria-hidden="true"></div>
+
+    <!-- CONTENT -->
+    <div class="informational-cta__content">
+      <h2
+        id="informational-cta-title"
+        class="informational-cta__title"
+      >
+        Find schools near you
+      </h2>
+
+      <p class="informational-cta__body">
+        <strong>Not sure what schools you are zoned for?</strong>
+        Find out by exploring our school boundary maps.
+        Look up public schools and districts by address or ZIP code.
+      </p>
+    </div>
+
+  </div>
+</a>
+
+<!-- map -->
+<section
+  class="static-search-map-wrap"
+  aria-label="View on map; no screenreader support"
+>
+  <div class="static-search-map iframe-map">
+    <iframe
+      title="Schools map"
+      src="https://www.openstreetmap.org/export/embed.html?bbox=-130.0%2C22.0%2C-65.0%2C52.0&layer=mapnik"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+
+    <div class="static-map-attribution">
+      © OpenStreetMap contributors
+      <a
+        href="https://www.openstreetmap.org"
+        target="_blank"
+        rel="noopener"
+      >
+        View larger map
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- pagination -->
+ <div class="search-pagination-container">
+  <nav class="pagination" aria-label="Pagination navigation">
+    <ul class="pagination__list">
+
+      <!-- Previous -->
+      <li>
+        <button
+          class="pagination__btn pagination__btn--nav"
+          disabled
+          aria-label="Go to previous page"
+        >
+          ‹
+        </button>
+      </li>
+
+      <!-- Pages -->
+      <li><a class="pagination__btn active" aria-current="page" href="#">1</a></li>
+      <li><a class="pagination__btn" href="#">2</a></li>
+      <li><a class="pagination__btn" href="#">3</a></li>
+      <li><a class="pagination__btn" href="#">4</a></li>
+      <li><a class="pagination__btn" href="#">5</a></li>
+
+      <!-- Ellipsis -->
+      <li class="pagination__ellipsis">…</li>
+
+      <!-- Last -->
+      <li><a class="pagination__btn" href="#">5083</a></li>
+
+      <!-- Next -->
+      <li>
+        <a
+          class="pagination__btn pagination__btn--nav"
+          href="#"
+          aria-label="Go to next page"
+        >
+          ›
+        </a>
+      </li>
+
+    </ul>
+  </nav>
+</div>
+
+
+</main>
+
+
+</section>
+</body>
+
+
+
+
+
+<script src="../javascript/search.js" defer></script>
+</body>
+</html>

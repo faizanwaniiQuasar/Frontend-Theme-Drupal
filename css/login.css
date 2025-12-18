@@ -1,0 +1,68 @@
+/* VISUALLY HIDDEN helper */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0);
+  white-space: nowrap; border: 0;
+}
+
+/* overlay and card base (keeps the look you had) */
+.modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.55); display: none; align-items: center; justify-content: center; z-index: 2000; padding: 20px; }
+.modal-overlay.active { display:flex; }
+.modal-card { background: #f4e8dd; width:100%; max-width:420px; border-radius:10px; padding:32px; position:relative; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+
+/* close/title */
+.modal-close { position:absolute; top:18px; right:18px; background:none; border:0; font-size:26px; cursor:pointer; }
+.modal-title { font-size:26px; margin:0 0 18px; font-weight:700; color:#222; }
+
+/* rows */
+.modal-row { margin-bottom:14px; }
+.modal-row label { display:block; font-weight:600; margin-bottom:6px; font-size:14px; 
+color: black;}
+.modal-row input[type="email"], .modal-row input[type="password"], .modal-row input[type="text"] {
+  width:100%; padding:10px 12px; border-radius:6px; border:1px solid #ccc; font-size:15px;
+  box-sizing:border-box;
+}
+
+/* password wrapper + eye toggle */
+.password-wrapper { position:relative; }
+.pw-toggle { position:absolute; right:10px; top:50%; transform:translateY(-50%); background:none; border:0; padding:6px; cursor:pointer; display:inline-flex; align-items:center; justify-content:center; }
+.pw-toggle:focus { outline: 3px solid rgba(31,95,67,0.12); border-radius:6px; }
+
+/* show/hide svg control */
+.eye { display:inline-block; width:18px; height:18px; }
+.eye-closed { display:none; }
+
+/* when password visible, flip which icon shows */
+.pw-toggle[aria-pressed="true"] .eye-open { display:none; }
+.pw-toggle[aria-pressed="true"] .eye-closed { display:inline-block; }
+
+/* signup checkbox */
+.signup-checkbox .checkbox-label { display:flex; gap:10px; align-items:flex-start; font-size:14px; color:#333; }
+.signup-checkbox input[type="checkbox"] { width:18px; height:18px; }
+
+/* forgot link */
+.forgot-link { color:#005bd1; font-size:14px; text-decoration:none; }
+
+/* continue button */
+.btn-continue { width:100%; background:#2ecc71; color:#fff; padding:12px 0; border-radius:22px; border:0; font-weight:700; font-size:16px; cursor:pointer; }
+
+/* divider */
+.auth-divider { display:flex; align-items:center; gap:8px; margin:18px 0 16px; color:#777; }
+.auth-divider__line { flex:1; height:1px; background:#ccc; }
+.auth-divider__text { white-space:nowrap; font-size:14px; }
+
+/* social buttons */
+.social-login .social-btn { width:100%; padding:12px; border-radius:22px; display:flex; align-items:center; justify-content:center; gap:12px; margin-bottom:12px; background:#fff; border:1px solid #ddd; font-weight:700; }
+.social-btn img { width:20px; height:20px; }
+
+/* footer text */
+.modal-footer-text { font-size:13px; color:#444; margin-top:12px; line-height:1.45; }
+.modal-footer-text a { color:#005bd1; font-weight:700; }
+
+/* small screens */
+@media (max-width:480px) {
+  .modal-card { padding:22px; border-radius:10px; }
+  .modal-title { font-size:22px; }
+}
