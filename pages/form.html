@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Form Fields Showcase</title>
+  <link rel="stylesheet" href="../css/form.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+
+<main class="container">
+  <header class="page-header">
+    <h1>Form Fields</h1>
+  
+  </header>
+
+  <form>
+
+    <!-- TEXT -->
+    <section class="card">
+      <h2>Text Inputs</h2>
+
+      <div class="field">
+        <label>Text</label>
+        <input type="text" placeholder="Enter text">
+      </div>
+
+      <div class="field">
+        <label>Email</label>
+        <input type="email" placeholder="email@example.com">
+      </div>
+
+      <div class="field">
+        <label>Password</label>
+        <input type="password" placeholder="Password">
+      </div>
+
+      <div class="field">
+        <label>Textarea</label>
+        <textarea placeholder="Long text"></textarea>
+      </div>
+    </section>
+
+    <!-- NUMBERS -->
+    <section class="card">
+      <h2>Numbers & Range</h2>
+
+      <div class="field">
+        <label>Number</label>
+        <input type="number">
+      </div>
+
+      <div class="field">
+        <label>Range</label>
+        <input type="range" min="0" max="100">
+      </div>
+    </section>
+
+    <!-- DATE -->
+    <section class="card">
+      <h2>Date & Time</h2>
+
+      <div class="field">
+        <label>Date</label>
+        <input type="date">
+      </div>
+
+      <div class="field">
+        <label>Time</label>
+        <input type="time">
+      </div>
+
+      <div class="field">
+        <label>Date & Time</label>
+        <input type="datetime-local">
+      </div>
+    </section>
+
+    <!-- SELECT -->
+    <section class="card">
+      <h2>Selects</h2>
+
+      <div class="field">
+        <label>Dropdown</label>
+        <select>
+          <option>Select option</option>
+          <option>Option One</option>
+          <option>Option Two</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Multi Select</label>
+        <select multiple>
+          <option>Option One</option>
+          <option>Option Two</option>
+          <option>Option Three</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- RADIO -->
+    <section class="card">
+      <h2>Radio Buttons</h2>
+
+      <div class="choice-group">
+        <label class="choice">
+          <input type="radio" name="radio">
+          <span></span>
+          Option One
+        </label>
+
+        <label class="choice">
+          <input type="radio" name="radio">
+          <span></span>
+          Option Two
+        </label>
+      </div>
+    </section>
+
+    <!-- CHECKBOX -->
+    <section class="card">
+      <h2>Checkboxes</h2>
+
+      <div class="choice-group">
+        <label class="choice checkbox">
+          <input type="checkbox">
+          <span></span>
+          Checkbox One
+        </label>
+
+        <label class="choice checkbox">
+          <input type="checkbox">
+          <span></span>
+          Checkbox Two
+        </label>
+      </div>
+    </section>
+
+    <!-- FILE & COLOR -->
+    <section class="card">
+      <h2>File & Color</h2>
+
+      <div class="field">
+        <label>File Upload</label>
+        <input type="file">
+      </div>
+
+      <div class="field">
+        <label>Color Picker</label>
+        <input type="color">
+      </div>
+    </section>
+
+    <!-- BUTTONS -->
+    <section class="card">
+      <h2>Actions</h2>
+
+      <div class="button-row">
+        <button type="submit">Submit</button>
+        <button type="reset" class="secondary">Reset</button>
+        <button type="button" class="ghost">Button</button>
+      </div>
+    </section>
+
+  </form>
+</main>
+
+</body>
+</html>
